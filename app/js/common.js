@@ -8,14 +8,27 @@ jQuery(document).ready(function($){
 	$('.mnwall-readmore a').text('Подробнее');
 
 
+	var he = $('body').outerHeight(true);
+	
 
 
 	$('.uk-overlay.uk-overlay-hover .uk-position-cover').click(function (eventObject) {
 		eventObject.preventDefault();
-		alert($(this).attr('href'));
+		var hrefka = $(this).attr('href');
+		$('#yt_wrapper').after('<div class="zoom"><img src="'+hrefka+'"></div>');
+		$('.overka').css({'display':'block','height':he});
 	});
 
 
+	$('.overka').click(function () {
+		$('.overka').fadeOut();
+		$('.zoom').fadeOut();
+	});
+
+	$('.zoom').click(function () {
+		$('.overka').fadeOut();
+		$('.zoom').fadeOut();
+	});
 
 	
 

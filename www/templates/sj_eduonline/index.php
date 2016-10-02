@@ -215,5 +215,6 @@ if($yt->getParam('comingsoon_mode')) header("Location: ".$this->baseUrl."?tmpl=c
     ?>
 
 <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/common.js"></script>
+<div class="overka"></div>
 </body>
 </html>
