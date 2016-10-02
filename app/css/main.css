@@ -6,6 +6,14 @@
   width: 157px !important;
   height: 50px  !important; }
 
+.module.lang {
+  margin-bottom: 0; }
+  .module.lang ul {
+    margin: 0;
+    padding: 0; }
+    .module.lang ul li {
+      list-style: none; }
+
 /*input[type=submit]*/
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */

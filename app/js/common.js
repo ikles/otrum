@@ -1,8 +1,16 @@
-$(function() {
+jQuery(document).ready(function($){
 
-	$(".toggle-mnu").click(function() {
-		$(this).toggleClass("on");
-		$(".main-mnu").slideToggle();
-		return false;
-	});
-});
+$('.lang-inline li:first-child a').text('EN');
+$('.lang-inline li:nth-child(2) a').text('AR');
+$('.lang-inline li:nth-child(3) a').text('RU');
+
+
+
+
+
+
+
+
+	
+
+}); //ready
