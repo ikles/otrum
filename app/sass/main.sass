@@ -1,8 +1,10 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto'
+
 .home-layout1 #yt_top
   .container
     width: 1200px !important
     margin: auto !important
-    padding-top: 40px
+    padding-top: 40px    
 
 .logo
   > img 
@@ -43,20 +45,20 @@
     margin-right: 10px
     margin-left: 20px
     margin-top: -4px
- 
-#yt_top1
-  position: fixed
-  top: 0
-  z-index: 100 
-  width: 100%
-  height: 40px
-  background-color: rgb(237, 237, 238)
-  overflow: hidden
-  padding-top: 6px  
-  box-sizing: border-box
-  .container
-    width: 1200px !important
-    margin: auto !important
+.home-layout1 
+  #yt_top1
+    position: fixed
+    top: 0
+    z-index: 100 
+    width: 100%
+    height: 40px
+    background-color: rgb(237, 237, 238)
+    overflow: hidden
+    padding-top: 6px  
+    box-sizing: border-box
+    .container
+      width: 1200px !important
+      margin: auto !important      
 
 .top-contacts
   .callback
@@ -72,8 +74,80 @@
     text-align: center
     margin-left: 20px
     margin-top: -3px
+    cursor: pointer
+
+#meganavigator li.level1 > .item-link
+  font-weight: bold
+  padding: 40px 14px !important
+
+#top1
+  float: right
+  .module
+    width: 274px !important
+    float: right
+    margin-bottom: 0 !important
+    margin-top: 6px !important
+
+#offlajn-ajax-search700 
+  width: 100%
 
 
+#offlajn-ajax-search700 .offlajn-ajax-search-container
+  background: none
+  padding: 0  
+
+  input
+    width: 274px !important
+    height: 40px !important
+    opacity: 0.4 !important
+    background-color: white !important
+    border: 0.25px solid rgb(110, 110, 110) !important    
+    padding: 0 10px !important
+    border-radius: 0 !important
+  input#suggestion-area700
+    display: none !important
+
+#ajax-search-button700
+  background: none
+  border: none
+  top: 9px !important
+  &:hover
+    background: none
+    border: none    
+
+#yt_mainmenu
+  margin-left: 65px
+
+.slider-detail  
+  left: calc(50% - 600px)  !important
+  text-align: left !important
+  width: 500px !important
+  height: 400px   !important
+  background-color: rgba(0,0,0,0.6) !important
+  box-sizing: border-box !important
+  padding: 94px 45px 84px 45px !important
+  font-family: Roboto !important
+  h3
+    font-size: 29px !important
+    font-family: Roboto !important
+    text-transform: none !important
+  p
+    font-size: 21px !important
+    font-family: Roboto !important
+    text-transform: none !important
+
+.detail-button.detail-button-active
+  font-family: Roboto !important
+  color: #FFF  !important
+  width: 110px !important
+  height: 35px !important
+  border: 0.25px solid white !important
+  color: white !important
+  font-size: 13px !important
+  font-weight: 400 !important
+  line-height: 2 !important
+  text-align: center !important
+  background-color: transparent !important 
 
 
 
@@ -83,6 +157,4 @@
 
 
 /*input[type=submit]*/
-
-
 @import _media
