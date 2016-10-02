@@ -61,7 +61,6 @@ if($yt->getParam('comingsoon_mode')) header("Location: ".$this->baseUrl."?tmpl=c
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/main.css">
 </head>
 
-
 <?php
     //sub Menu Home page
     $menu = JFactory::getApplication()->getMenu();

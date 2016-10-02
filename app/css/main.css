@@ -1,4 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
+@font-face {
+  font-family: samsungIcon;
+  src: url(../fonts/samsungIcon.ttf); }
+
 .home-layout1 #yt_top .container {
   width: 1200px !important;
   margin: auto !important;
@@ -158,7 +162,64 @@
 
 .row-fluid.sj-joinpeople > aside {
   margin: auto;
-  width: 1200px; }
+  width: 1180px; }
+
+.component.solutions .span3 {
+  position: relative;
+  width: 286px;
+  cursor: pointer; }
+  .component.solutions .span3:hover span {
+    background-color: #292929; }
+    .component.solutions .span3:hover span:after {
+      color: #ccc; }
+  .component.solutions .span3 span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(75, 56, 88, 0.85);
+    display: block;
+    color: #FFF;
+    text-align: left;
+    font-size: 17px;
+    font-family: Roboto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 12.5px;
+    text-transform: uppercase; }
+    .component.solutions .span3 span:after {
+      content: "4";
+      font-family: "samsungIcon";
+      height: 24px;
+      float: right;
+      font-size: 20px;
+      color: #FFF; }
+
+.row-fluid [class*="span"] {
+  margin-left: 10px; }
+
+.row-fluid.sj-joinpeople {
+  padding: 0;
+  padding-bottom: 10px; }
+  .row-fluid.sj-joinpeople:first-child {
+    padding-top: 135px; }
+  .row-fluid.sj-joinpeople:nth-child(2) {
+    padding-bottom: 70px; }
+
+#yt_spotlight1 {
+  background-color: #F6F6F6; }
+
+#spotlight1 .module {
+  padding-top: 70px !important; }
+  #spotlight1 .module .modcontent {
+    color: #292929;
+    font-size: 15px;
+    font-family: Roboto; }
+  #spotlight1 .module h3 {
+    font-family: Roboto;
+    font-size: 21px;
+    text-transform: none; }
 
 /*input[type=submit]*/
 /*==========  Desktop First Method  ==========*/
