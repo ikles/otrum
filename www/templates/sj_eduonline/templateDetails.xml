@@ -78,6 +78,7 @@
         <position>bottom3</position>
         <position>bottom4</position>
         
+		<position>header2</position>       
         <position>top1</position>
         <position>top2</position>
         <position>top3</position>
@@ -106,7 +107,7 @@
 
         <position>syndicate</position>
         <position>debug</position>
-        <position>comingsoon</position>
+        <position>comingsoon</position>        
     </positions>
 
 <config>
