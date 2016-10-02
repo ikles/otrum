@@ -15,9 +15,14 @@
     </groups>
     <blocks>
 
-        <top html5tag="section" order="1" id="yt_top">
-            <positions>
-			   <position class="header2" type="modules" style="ytmod">header2</position>
+	<top1 html5tag="section" order="0" id="yt_top1">
+	  <positions>
+		<position class="header2" type="modules" style="ytmod">header2</position>	   
+		</positions>
+	</top1>
+
+	<top html5tag="section" order="1" id="yt_top">
+            <positions>			   
                <position class="col-lg-2 col-md-3 col-sm-4 col-xs-6" type="feature" overlogo="logo">@logo</position>
                <position class="col-lg-5 col-md-4 col-sm-3 col-xs-1" type="feature">@mainmenu</position>
                <position class="col-lg-3 col-md-2 col-sm-5 col-xs-5 hidden-xs" type="modules"  style="ytmod">top1</position>
