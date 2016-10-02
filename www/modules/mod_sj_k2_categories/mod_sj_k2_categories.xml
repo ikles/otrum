@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade">
+	<name>SJ Categories for K2</name>
+	<creationDate>April 2016</creationDate>
+	<author>YouTech Company</author>
+	<copyright>Copyright (c) 2016 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>1.1.0</version>
+	<description>SJ_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_sj_k2_categories">mod_sj_k2_categories.php</filename>
+		<filename>index.html</filename>
+		<folder>core</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages />
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_k2/elements/">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="fieldMODULECLASSSUFFIX" />
+                <field name="deviceclass_sfx" type="textarea" default="preset01-4 preset02-3 preset03-2 preset04-2 preset05-1" label="Device Class Suffix" description="" />
+				<field name="layout" type="modulelayout" default="basic" class="btn-group" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="target" type="list" default="_self" label="Open Link" description="The Type shows when you click on the link">
+                    <option value="_blank">New Window</option>
+                    <option value="_self">Same Window</option>
+                    <option value="_windowopen">Popup window</option>
+                </field>
+			</fieldset>
+			<fieldset name="source_selection" label="Source Options">
+                <field name="catfilter" type="radio" class="btn-group" default="0" label="K2_CATEGORY_FILTER" description="">
+                    <option value="0">K2_ALL</option>
+                    <option value="1">K2_SELECT</option>
+                </field>
+                <field name="category_id" type="categoriesmultiple" default="" label="K2_SELECT_ONE_OR_MORE_CATEGORIES" description="K2_SELECT_ONE_ORE_MORE_CATEGORIES_FOR_WHICH_YOU_WANT_TO_FILTER_AN_ITEMS_LIST_SELECT_NONE_TO_FETCH_ITEMS_FROM_ALL_CATEGORIES"/>
+               <!--  <field name="getCategoriesChild" type="radio" class="btn-group" default="0" label="Fetch categories from subcategories" description="">
+                    <option value="1">K2_YES</option>
+                    <option value="0">K2_NO</option>
+                </field>  -->
+                <field name="source_limit" type="text" default="6" label="Sub Categories Count" description="Sub Categories Count" />
+				<field name="accmouseenter" type="list" default="click" label="Tab events (For theme4)" description="Selecting tab events">
+					<option value="click">Click</option>
+					<option value="mouseenter">Hover</option>
+				</field>
+            </fieldset>
+
+			<fieldset name="category_options" label="Category Options">
+				<field name="cat_title_display" type="radio" class="btn-group" default="1" label="Show Title" description="Show Category Title">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="cat_sub_title_display" type="radio" class="btn-group" default="1" label="Show Sub Title" description="Show Sub Category Title">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+                <field name="cat_title_max_characs" type="text" default="25" label="Title Max Chars" description="Max Chars of Category Title. 0 to unlimit length!" />				
+				<field name="cat_all_article" type="radio" class="btn-group" default="1" label="Show Total Articles" description="Show Total Articles">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="image_options" label="Image Options">			
+			    <field name="header1" type="spacer" class="text" label="Get Images From K2 Image" />
+			    <field name="imgcfg_from_k2_image" label="K2 Image" class="btn-group" description="K2 item image standard" type="radio" default="1">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+			    </field>
+
+			   	<field name="header3" type="spacer" class="text" label="Get Images From Inline Description" />
+			    <field name="imgcfg_from_inline_description" label="Inline Description" class="btn-group" description="Inline Description" type="radio" default="1">
+				     <option value="1">Yes</option>
+				     <option value="0">No</option>
+			    </field>
+
+			    <field name="header5" type="spacer" class="text" label="Get images From Extend Folder"/>
+			    <field name="imgcfg_from_external" label="Extend Folder" class="btn-group" description="Extend Folder" type="radio" default="1">
+				     <option value="1">Yes</option>
+				     <option value="0">No</option>
+			    </field>
+			    <field name="imgcfg_external_url" type="text" default="images/k2/{id}.jpg" label="Extend Folder" description="Extend Folder"/>
+			    <field name="imgcfg_order" type="text" default="k2_image,inline_description,external" label="Order to Get" description="Order to Get Image" />
+
+			    <field name="imgcfg_function" type="list" label="Resize Mode">
+				     <option value="none">None</option>
+				     <option value="resize_center">Center</option>
+				     <option value="resize_fill">Fill</option>
+				     <option value="resize_fit">Fit</option>
+				     <option value="resize_stretch">Stretch</option>
+			    </field>
+			    <field name="imgcfg_type" type="list" default="" label="Image Type" description="Image Type">
+				     <option value="">Default</option>
+				     <option value="1">GIF</option>
+				     <option value="2">JPEG</option>
+				     <option value="3">PNG</option>
+			    </field>
+			    <field name="imgcfg_transparency" label="Keep Transparency" class="btn-group" description="Keep Transparency" type="radio" default="1">
+				     <option value="1">Yes</option>
+				     <option value="0">No</option>
+			    </field>
+			    <field name="imgcfg_width" type="text" default="100" label="Width" description="Width" />
+			    <field name="imgcfg_height" type="text" default="60" label="Height" description="Height" />
+			    <field name="imgcfg_background" type="color" default="" label="Background" description="Background" />
+				<field name="imgcfg_placeholder" label="User Default Image" class="btn-group" description="User Default Image" type="radio" default="1">
+	                 <option value="1">Yes</option>
+	                 <option value="0">No</option>
+              	</field>
+                <field name="imgcfg_placeholder_path" type="text" default="modules/mod_sj_k2_categories/assets/images/nophoto.png" label="Default Image Path" description="Default Image Path"/>                			     
+			</fieldset>  
+            
+			<fieldset name="advanced" label="Advanced">
+				<field name="pretext" type="textarea" default="" label="Pre-text" description="Intro text of module" cols="45" rows="4" filter="raw" />
+				<field name="posttext" type="textarea" default="" label="Post-text" description="Footer text of module" cols="45" rows="4" filter="raw" />
+				<field name="owncache" type="radio"  class="btn-group" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

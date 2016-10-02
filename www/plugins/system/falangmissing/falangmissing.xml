@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_FALANG_MISSING</name>
+    <author>Stéphane Bouey</author>
+    <creationDate>November 2015</creationDate>
+    <copyright>2011-2015, Faboba</copyright>
+    <license>GNU General Public License version 2 or later http://www.gnu.org/licenses/gpl.html</license>
+    <authorEmail>stephane.bouey@faboba.com</authorEmail>
+    <authorUrl>http://www.faboba.com</authorUrl>
+    <version>1.4</version>
+    <description>PLG_SYSTEM_FALANG_MISSING_TRANSLATION_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="falangmissing">index.html</filename>
+		<filename plugin="falangmissing">falangmissing.php</filename>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="language/en-GB">en-GB.plg_system_falangmissing.ini</language>
+		<language tag="language/en-GB">en-GB.plg_system_falangmissing.sys.ini</language>
+	</languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="missing-text" type="textarea" default="There is no translation available."
+                label="PLG_SYSTEM_FALANG_MISSING_DEFAULT_TEXT_LABEL" description="PLG_SYSTEM_FALANG_MISSING_DEFAULT_TEXT_DESC"
+                rows="5" cols="5" filter="raw"/> -->
+                <!-- <field type="spacer" name="myspacer" hr="true" /> -->
+                <field name="bootstrap-alert" type="radio"
+                       class="btn-group btn-group-yesno"
+                       default="0"
+                       description=""
+                       label="PLG_SYSTEM_FALANG_MISSING_USE_BOOTSTRAP_ALERT_LABEL"
+                        >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="bootstrap-alert-style" type="list" multiple="false" default="danger"
+                       label="PLG_SYSTEM_FALANG_MISSING_USE_BOOTSTRAP_ALERT_STYLE_LABEL"
+                       description=""
+                        >
+                    <option value="alert-danger">alert-danger</option>
+                    <option value="alert-warning">alert-warning</option>
+                    <option value="alert-info">alert-info</option>
+                    <option value="alert-success">alert-success</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config></extension>

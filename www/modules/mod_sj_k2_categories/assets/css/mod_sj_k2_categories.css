@@ -1,0 +1,276 @@
+/**
+ * @package Sj K2 Categories
+ * @version 2.5
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @copyright (c) 2012 YouTech Company. All Rights Reserved.
+ * @author YouTech Company http://www.smartaddons.com
+ *
+ */
+
+.clear{
+    clear:both;
+}
+.sj_k2_categories {
+    margin: 20px 0;
+    overflow: hidden;
+}
+.sj_k2_categories .intro_text,
+.sj_k2_categories .footer_text {
+    margin: 10px 0px;
+}
+.sj_k2_categories .cat-wrap{
+	width: 100%;
+	display: inline-block;
+}
+
+/*############################################## Css Device ##################################*/
+.sj_k2_categories.preset02-1 .cat-wrap  .content-box{float: left;margin: 0;width: 100%;}
+.sj_k2_categories.preset02-2 .cat-wrap  .content-box{float: left;margin:0 1%;width: 48%;}
+.sj_k2_categories.preset02-3 .cat-wrap  .content-box{float: left;margin:0 1%;width: 31.3333%;}
+.sj_k2_categories.preset02-4 .cat-wrap  .content-box{float: left;margin:0 1%;width: 23%;}
+.sj_k2_categories.preset02-5 .cat-wrap  .content-box{float: left;margin:0 1%;width: 18%;}
+.sj_k2_categories.preset02-6 .cat-wrap  .content-box{float: left;margin:0 1%;width: 14.6666%;}
+
+@media all and (max-width: 320px){
+	.sj_k2_categories.preset05-1 .cat-wrap  .content-box{float: left;margin: 0;width: 100%;}
+	.sj_k2_categories.preset05-2 .cat-wrap  .content-box{float: left;margin:0 1%;width: 48%;}
+	.sj_k2_categories.preset05-3 .cat-wrap  .content-box{float: left;margin:0 1%;width: 31.3333%;}
+	.sj_k2_categories.preset05-4 .cat-wrap  .content-box{float: left;margin:0 1%;width: 23%;}
+	.sj_k2_categories.preset05-5 .cat-wrap  .content-box{float: left;margin:0 1%;width: 18%;}
+	.sj_k2_categories.preset05-6 .cat-wrap  .content-box{float: left;margin:0 1%;width: 14.6666%;}
+    .sj_k2_categories.preset05-1  .clr1,
+    .sj_k2_categories.preset05-2  .clr2,
+    .sj_k2_categories.preset05-3  .clr3,
+    .sj_k2_categories.preset05-4  .clr4,
+    .sj_k2_categories.preset05-5  .clr5,
+    .sj_k2_categories.preset05-6  .clr6{
+        clear: both;
+    }	
+}
+@media all and (min-width: 321px) and (max-width: 480px){
+    .sj_k2_categories.preset04-1 .cat-wrap  .content-box{float: left;margin: 0;width: 100%;}
+    .sj_k2_categories.preset04-2 .cat-wrap  .content-box{float: left;margin:0 1%;width: 48%;}
+    .sj_k2_categories.preset04-3 .cat-wrap  .content-box{float: left;margin:0 1%;width: 31.3333%;}
+    .sj_k2_categories.preset04-4 .cat-wrap  .content-box{float: left;margin:0 1%;width: 23%;}
+    .sj_k2_categories.preset04-5 .cat-wrap  .content-box{float: left;margin:0 1%;width: 18%;}
+    .sj_k2_categories.preset04-6 .cat-wrap  .content-box{float: left;margin:0 1%;width: 14.6666%;}	
+    .sj_k2_categories.preset04-1  .clr1,
+    .sj_k2_categories.preset04-2  .clr2,
+    .sj_k2_categories.preset04-3  .clr3,
+    .sj_k2_categories.preset04-4  .clr4,
+    .sj_k2_categories.preset04-5  .clr5,
+    .sj_k2_categories.preset04-6  .clr6{
+        clear: both;
+    }    
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    .sj_k2_categories.preset03-1 .cat-wrap  .content-box{float: left;margin: 0;width: 100%;}
+    .sj_k2_categories.preset03-2 .cat-wrap  .content-box{float: left;margin:0 1%;width: 48%;}
+    .sj_k2_categories.preset03-3 .cat-wrap  .content-box{float: left;margin:0 1%;width: 31.3333%;}
+    .sj_k2_categories.preset03-4 .cat-wrap  .content-box{float: left;margin:0 1%;width: 23%;}
+    .sj_k2_categories.preset03-5 .cat-wrap  .content-box{float: left;margin:0 1%;width: 18%;}
+    .sj_k2_categories.preset03-6 .cat-wrap  .content-box{float: left;margin:0 1%;width: 14.6666%;} 
+    .sj_k2_categories.preset03-1  .clr1,
+    .sj_k2_categories.preset03-2  .clr2,
+    .sj_k2_categories.preset03-3  .clr3,
+    .sj_k2_categories.preset03-4  .clr4,
+    .sj_k2_categories.preset03-5  .clr5,
+    .sj_k2_categories.preset03-6  .clr6{
+        clear: both;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1200px){
+    .sj_k2_categories.preset02-1 .cat-wrap  .content-box{float: left;margin: 0;width: 100%;}
+    .sj_k2_categories.preset02-2 .cat-wrap  .content-box{float: left;margin:0 1%;width: 48%;}
+    .sj_k2_categories.preset02-3 .cat-wrap  .content-box{float: left;margin:0 1%;width: 31.3333%;}
+    .sj_k2_categories.preset02-4 .cat-wrap  .content-box{float: left;margin:0 1%;width: 23%;}
+    .sj_k2_categories.preset02-5 .cat-wrap  .content-box{float: left;margin:0 1%;width: 18%;}
+    .sj_k2_categories.preset02-6 .cat-wrap  .content-box{float: left;margin:0 1%;width: 14.6666%;}
+    .sj_k2_categories.preset02-1  .clr1,
+    .sj_k2_categories.preset02-2  .clr2,
+    .sj_k2_categories.preset02-3  .clr3,
+    .sj_k2_categories.preset02-4  .clr4,
+    .sj_k2_categories.preset02-5  .clr5,
+    .sj_k2_categories.preset02-6  .clr6{
+        clear: both;
+    }     	
+}
+
+@media all and (min-width: 1201px){
+    .sj_k2_categories.preset01-1 .cat-wrap  .content-box{float: left;margin: 0;width: 100%;}
+    .sj_k2_categories.preset01-2 .cat-wrap  .content-box{float: left;margin:0 1%;width: 48%;}
+    .sj_k2_categories.preset01-3 .cat-wrap  .content-box{float: left;margin:0 1%;width: 31.3333%;}
+    .sj_k2_categories.preset01-4 .cat-wrap  .content-box{float: left;margin:0 1%;width: 23%;}
+    .sj_k2_categories.preset01-5 .cat-wrap  .content-box{float: left;margin:0 1%;width: 18%;}
+    .sj_k2_categories.preset01-6 .cat-wrap  .content-box{float: left;margin:0 1%;width: 14.6666%;}
+    .sj_k2_categories.preset01-1  .clr1,
+    .sj_k2_categories.preset01-2  .clr2,
+    .sj_k2_categories.preset01-3  .clr3,
+    .sj_k2_categories.preset01-4  .clr4,
+    .sj_k2_categories.preset01-5  .clr5,
+    .sj_k2_categories.preset01-6  .clr6{
+    	clear: both;
+    }
+}
+/*################################# End css Device #############################################*/
+
+
+
+
+
+.sj_k2_categories .cat-wrap  .content-box{
+	overflow: hidden;
+	line-height: 20px;
+	padding-bottom:15px;
+}
+.sj_k2_categories .cat-wrap .content-box .cat-title{
+	font-weight: bold;
+}
+.sj_k2_categories .cat-wrap  .content-box a{
+    color: #000;	
+}
+
+.sj_k2_categories .cat-wrap.theme1 .content-box .child-cat .child-cat-title{
+	float:none;
+	padding:0;
+}
+
+.sj_k2_categories .cat-wrap .content-box .child-cat .child-cat-title{
+	float: left; 
+	padding-right: 5px;
+}
+.sj_k2_categories .cat-wrap.theme2 .content-box img,
+.sj_k2_categories .cat-wrap.theme3 .content-box img,
+.sj_k2_categories .cat-wrap.theme4 img{
+    width: 100%;
+    border:1px solid transparent;
+}
+
+.sj_k2_categories .cat-wrap img:hover{
+	opacity:0.8;
+	filter: alpha(opacity = 80);
+}
+
+/*#################### css for theme 2 ######################*/
+.sj_k2_categories .cat-wrap.theme2 .arrow {
+	background: url(../images/arrow.png) no-repeat;
+	margin-top: 6px;
+	width: 6px;
+	height: 7px;
+	float: left;
+	padding-right:5px;
+}
+.sj_k2_categories .cat-wrap.theme2 .content-box .parent-cat{
+    float:left;
+    margin:0 10px 10px 0;  
+}
+.sj_k2_categories .cat-wrap.theme2 .content-box .parent-cat .cat-title{
+    padding-bottom: 5px;
+}
+.sj_k2_categories .cat-wrap.theme2 .content-box .child-cat .child-cat-title{
+    float: none; 
+}
+/*#################### css for theme 3 ######################*/
+.sj_k2_categories .cat-wrap.theme3 .content-box .cat-title{
+    padding-top: 5px;
+}
+/*#################### css for theme 4 ######################*/
+.sj_k2_categories .cat-wrap.theme4{
+	border: 1px solid #CCCCCC;
+	width: 99%;
+	height: auto;
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-inner{
+	width: 100%;
+	float: left;
+	padding:0px;
+	margin:0px;
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-heading {
+    background: url(../images/bk.gif) repeat-x;
+    height: 24px;
+    cursor: pointer;
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-heading .icon_left {
+    background: url(../images/icon.png) no-repeat;
+    margin-top: 8px;
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+    float: left
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-heading .icon_right{
+    background: url(../images/plus.gif) no-repeat;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 13px;
+    height: 13px;
+    float: right
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-inner.selected .sj_k2_categories-heading.selected .icon_right{
+    background: url(../images/minus.gif) no-repeat;
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-heading .cat-title{
+    padding-left:5px;
+    line-height: 24px;
+    color: #000;
+    float: left;
+        white-space: nowrap;
+    overflow: hidden;
+     text-overflow: ellipsis;
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-content{
+    
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* .sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-inner.selected .sj_k2_categories-content{
+	margin:10px;
+    margin-bottom:10px;
+} */
+
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-content .child-cat{
+	padding:15px;
+	padding-bottom:0px;
+	overflow: hidden;
+
+}
+
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-content .child-cat.cat-lastitem{
+	padding-bottom:10px;
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-content .child-cat.subcat-empty{
+	padding:10px;
+}
+
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-content .child-cat .child-cat-info{
+    display: inline-block;
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-content .child-cat .image-cat{
+    float:left;
+    margin-right:10px;
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-content .child-cat .child-cat-desc{
+	float:left;
+}
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-content .child-cat .child-cat-desc .child-cat-title,
+.sj_k2_categories .cat-wrap.theme4 .sj_k2_categories-content .child-cat .child-cat-desc .child-cat-title a{
+    float:left;
+    color: #000;
+    font-weight: bold; 
+    padding-right:3px;   
+}
+
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}

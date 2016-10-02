@@ -1,0 +1,56 @@
+.toggle-mnu 
+  display: block
+  float: right
+  right: 0
+  top: 0
+  text-align: center
+  line-height: 48px
+ 
+.toggle-mnu
+  display: block
+  width: 28px
+  height: 28px
+  margin: 40px 15px
+  &:focus 
+    outline: none 
+  
+
+
+.toggle-mnu span:after,
+.toggle-mnu span:before
+  content: ""
+  position: absolute
+  left: 0;
+  top: -9px
+
+.toggle-mnu span:after
+  top: 9px
+
+.toggle-mnu span 
+  position: relative
+  display: block
+
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+  width: 100%
+  height: 2px
+  background-color: #000
+  transition: all 0.3s
+  backface-visibility: hidden
+  border-radius: 2px
+
+.toggle-mnu.on span
+  background-color: transparent
+
+.toggle-mnu.on span:before
+  transform: rotate(45deg) translate(5px, 5px)
+
+.toggle-mnu.on span:after
+  transform: rotate(-45deg) translate(7px, -8px)
+
+.toggle-mnu.on + #menu
+  opacity: 1
+  visibility: visible
+  

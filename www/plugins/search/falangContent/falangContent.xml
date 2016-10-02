@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="2.5" type="plugin" group="search">
+	<name>plg_search_falang_content</name>
+	<author>Stéphane Bouey</author>
+	<creationDate>2013-06-12</creationDate>
+	<copyright>Faboba</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>stephane.bouey@faboba.com</authorEmail>
+	<authorUrl>http://www.faboba.com</authorUrl>
+	<version>1.1</version>
+	<description>PLG_SEARCH_FALANG_CONTENT_XML_DESCRIPTION</description>
+	<files>
+        <filename plugin="falangContent">falangContent.php</filename>
+        <folder>language</folder>
+	</files>
+    <languages>
+        <language tag="language/en-GB">en-GB.plg_search_falangContent.ini</language>
+        <language tag="language/en-GB">en-GB.plg_search_falangContent.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="search_limit" type="text" size="5" default="50"
+                       label="PLG_SEARCH_FALANG_CONTENT_FIELD_SEARCHLIMIT_LABEL"
+                       description="PLG_SEARCH_FALANG_CONTENT_FIELD_SEARCHLIMIT_DESC"/>
+                <field name="@spacer" type="spacer" default="" label="" description="" />
+                <field name="search_content" type="radio" default="1"
+                       label="Content Items"
+                       description="Search Content Items?">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="search_archived" type="radio" default="1"
+                       label="PLG_SEARCH_FALANG_CONTENT_FIELD_ARCHIVED_LABEL"
+                       description="PLG_SEARCH_FALANG_CONTENT_FIELD_ARCHIVED_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+            </fieldset>
+    </fields>
+    </config>
+</extension>

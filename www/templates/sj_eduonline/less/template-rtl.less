@@ -1,0 +1,273 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+
+// --* RTL Language Templates *------------------
+// ---------------------------------------------
+/*   1.System Tool
+ *   2.Grid Systemp And Page Structure
+ *   3.Joomla Base & Component Joomla
+ *   4.Custom Module
+ *   5.RTL Menu
+ */
+
+// Bootstrap mixins
+@import "../asset/bootstrap/less/mixins.less";
+@import "../asset/bootstrap/less/variables.less";
+// Color Variables
+@import "color/variables_color.less";
+.rtl{
+  .itemListView.listing_courses .courses-right .readItemTitle{
+      bottom: 15px;
+      left: -15px;
+      right: auto;
+      text-align: right;
+      transform: rotateZ(90deg);
+      -moz-transform: rotateZ(90deg);
+      -webkit-transform: rotateZ(90deg);
+      a:after{
+        left: 50px;
+      }
+      
+  }
+  .k2store-notification .cart_dialogue_close{
+    right: auto;
+    left: 10px;
+    
+  }
+  .contact-page .el-control-send{float: left;}
+  .itemListView.listing_courses .courses-right .k2store-product-info{
+    float: right;
+    .product_price{
+        border-left: 1px solid #ebebeb;
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+  }
+  #k2Container.item-courses .headerTop .headerTopRight .itemExtraFields{
+    float: right;
+  }
+  #k2Container.item-courses .headerTop .headerTopRight .k2store{float: left}
+  .registration a.button{color: #fff;}
+  .cpanel-reset .btn{color: #fff;}
+  [class*=" fa-"] {margin: 0;}
+     // 1.System Tool
+     // --------------------------------------------------
+     #yt_tool_bottom .module .btn-special{padding: 0 5px;}
+
+
+
+     // 2.Grid Systemp And Page Structure
+     // --------------------------------------------------
+
+
+     // 3.Joomla Base & Component Joomla
+     // --------------------------------------------------
+     #yt_breadcrumb div.module ul.breadcrumb li:first-child .divider{margin: 0 0 0 5px;}
+
+     /*GENERIC BASE JOOMLA*/
+
+     .icon-caret-right:before{content: "\f0d9";}
+     .form-horizontal .control-label{text-align: right;}
+     #system-message{
+      .error > ul{margin-right: 0;background-position: 99% center;}
+    }
+
+    .label {margin-right: 0px;margin-left: 15px;}
+
+    /*GENERIC ARTICLE STYLES*/
+
+          // Category Blog
+
+
+          // Featured Article
+          
+
+          //Single Article
+          
+
+          // Category List
+          table.category thead tr th{text-align: right;}
+          div.categories-list ul{padding: 0 15px 0 0;
+            ul > li{
+              &:after,&:before{left: auto;right: -1px;}
+            }
+          }
+
+          // Page Break
+          dl.tabs dt{float: right;}
+
+          // Search Component
+          .search #searchForm .phrases-box input, .search #searchForm .only input{float: right;margin: 4px -20px 0 5px;}
+
+          // Smart Search Component
+          #advanced-search{text-align: right;}
+
+          // Page Email & Print
+          &.contentpane {
+           #mailto-window .mailto-close{left: 40px;right: auto;}
+           .row-fluid [class*="span"]:first-child{margin-right: 0;}
+           .row-fluid [class*="span"]{margin: 0;margin-right: 2.12766%;float: right;}
+         }
+
+         .pager li > a, .pager li > span{white-space: nowrap;}
+
+          //Contact Component
+          div.contact .contact-image{float: left;}
+          #g-about .customersay{
+           .cus-title{ left: inherit; padding: 10px 0;}
+           .yt-extra-carousel .carousel-control.left{left: 10px !important; right: inherit !important;}
+           .yt-extra-carousel .carousel-control.right{left: 45px !important; right: inherit !important;}
+           blockquote{border-right: 0;}
+
+         }
+         #g-about .caption{margin: 0 0 1em 1em;}
+         #g-about .title b{padding: 0 0 0 15px;}
+
+          // User Component
+          &.view-login .wrap-login .form-horizontal .control-group{float: right;}
+          &.view-login .wrap-login .other-link ul.yt-list li{float: right;margin: 0 0 0 25px;}
+          .registration .form-horizontal .control-label{text-align: right;float: right;}
+          //.wrap-login .other-link .list {margin-right: 10px !important;}
+
+          //Archive
+          div.archive .filter-search #limit {margin-right: 0px;margin-left: 10px;}
+
+          //Tags Category
+          .tag-category ul.items-row .item {
+            .item-image {margin: 0px 0px 0px 20px;}
+            a.readmore {float: right;
+              &:after {left: auto;right: 0px;}
+            }
+            .article-text .item-headinfo .article-info dd .create {background-position: right center;padding-left: 0px;padding-right: 25px;}
+          }
+
+          //
+          .pagination li {float: right;
+            .fa-angle-left.r-hiden {display: block; position: relative; top: 3px;}
+          }
+
+
+    //shortcode
+    .yt-slider-carousel .carousel-indicators {left: 0; right: auto;}
+
+    .blog{
+      .items-leading{
+        .item {.items-row .item();}
+      }
+      .items-row{
+        .item {
+          .wrap-article {
+            .article-text {
+              .article-info-left{ 
+                float: right;
+              }
+              .article-info-right{
+                padding: 20px 15px 0 0; text-align: right;
+                .createdby{
+                  margin-right: 0px; margin-left: 20px;
+                }
+              }
+            }
+          }    
+          .unseen.element-invisible {float: right; margin-right: 0; margin-left: 15px;}
+        }
+        &.col-sm-12 {
+          .wrap-article {
+            text-align: right;
+          }
+        }
+      }
+    }
+    // 4.Custom Module
+    // --------------------------------------------------
+    // Other Module
+    .bootstrap-select.btn-group .btn .filter-option{text-align: right;}
+    div.module.listingtab_home1 .sj-listing-tabs .ltabs-items-container .control-slide-product{left: 10px;right: auto;}
+    .sj-vm-filter .ft-filtering .ft-option .ft-opt-close{left: 0; right: auto;}
+    .item-page .content-contact .yt-list li .yt-icon{float: right; margin: 0 0 0 20px;}
+    .item-page .pager ul.pagination li {
+      .l-hiden {display: none;} .fa-angle-left.r-hiden {display: block;}
+    }
+    .item-page{
+      .article-text {
+        .article-top-info{
+          dd.createdby{margin-right: 0; margin-left: 10px; border-left: 1px #ccc solid; border-right: none;  padding-right: 0; padding-left: 10px;}
+          dl.article-info{float: left;}
+        }
+        .article-info {
+          dd {
+            margin-right: 0; margin-left: 10px;
+          }
+          .hits{
+            p{margin-right: 0; margin-left: 10px;
+            }
+          }
+        }
+      }
+      .related-items {
+        .content {
+          p {margin-right: 0 !important;}
+        }
+      }
+    }
+    //Sj Flat menu
+    .module.sjflatmenu .modcontent .accordion-menu {direction: ltr;}
+    .module._menu.side-menu .modcontent ul.menu > li.parent:hover ul{right: -100%; left: inherit;
+      li:hover ul{right: -100%; left: inherit;}
+    }
+    .module._menu.tree-menu .modcontent ul.menu > li.parent{
+      ul{padding-right: 20px; padding-left: 0;}
+      &:hover ul{padding-right: 20px;}
+    }
+    .module._menu.side-menu .modcontent ul.menu > li.parent > a:after,
+    .module._menu.side-menu .modcontent ul.menu > li.parent span:after{content: "\f0d9"; float: left;}
+    .module._menu.side-menu .modcontent ul.menu > li.parent:hover ul li.parent > a:after,
+    .module._menu.side-menu .modcontent ul.menu > li.parent ul li.parent > span:after{content: "\f0d9"; float: left; right: inherit;}
+
+    #xmap{
+      ul{
+       li{
+        a{
+         &:before{
+          content: "\f104";
+          font-family: "FontAwesome";
+          float: right;
+          margin-left: 8px;
+          margin-right: 0;
+        }
+      }
+    }
+    ul.level_1{
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+}
+.blog{
+  div.pagination{
+    margin-bottom: 0;
+    ul.pagination li {float: right;
+      .l-hiden {display: none;}
+    }
+  }
+}
+ul.list{margin-right: -25px;}
+
+.related-items {
+  direction: ltr;
+  .owl-controls {
+    position: absolute; top: -80px; right: auto; left: 15px;
+  }
+  .owl-item {direction: rtl;}
+}
+
+/*--- RTL Fitness ---*/
+
+@import "page/home1-rtl.less";
+@import "page/home2-rtl.less";
+}
+

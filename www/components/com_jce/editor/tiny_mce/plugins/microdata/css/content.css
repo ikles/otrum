@@ -1,0 +1,2 @@
+/*microdata - 1.0.10 | 19 December 2015 | http://www.joomlacontenteditor.net | Copyright (C) 2006 - 2015 Ryan Demmer. All rights reserved | GNU/GPL Version 2 - http://www.gnu.org/licenses/gpl-2.0.html*/
+*[data-microdata-itemprop]:before{content:"";background:url('../img/microdata-small.png') no-repeat;display:inline-block;width:16px;height:16px;padding:0;vertical-align:middle;}

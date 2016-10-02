@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form addfieldpath="/administrator/components/com_minitekwall/models/fields">
+		
+	<fields name="scroller_params">		
+			
+	</fields>
+	
+</form>

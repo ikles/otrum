@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>Sj K2 Filter</name>
+	<creationDate>April 2016</creationDate>
+	<author>YouTech Company</author>
+	<copyright>Copyright (c) 2016 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>1.0.1</version>
+	<description>TPL_YTFRAMEWORK_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_sj_k2_filter">mod_sj_k2_filter.php</filename>
+		<filename>index.html</filename>
+        <folder>core</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages />
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_sj_k2_filter/core/fields">
+			<fieldset name="basic">
+				<field name="show_keyword" type="radio" default="1" label="K2_FILTER_KEYWORD" class="btn-group" description="K2_FILTER_KEYWORD_DESC">
+					<option value="1">Show</option>
+					<option value="0">Hide</option>
+				</field>
+				<field name="show_categories" type="radio" default="1" label="K2_FILTER_CATEGORIES" class="btn-group" description="K2_FILTER_CATEGORIES_DESC">
+					<option value="1">Show</option>
+					<option value="0">Hide</option>
+				</field>
+				<field name="show_date" type="radio" default="1" label="K2_FILTER_DATE" class="btn-group" description="K2_FILTER_DATE_DESC">
+					<option value="1">Show</option>
+					<option value="0">Hide</option>
+				</field>
+				<field name="itemid" type="menuitem" default="" label="Search result page" description="Select a menu item to display search result" />
+			</fieldset>
+          		<fieldset name="SOURCE_OPTIONS_LABEL" label="SOURCE_OPTIONS_LABEL" addfieldpath="/administrator/components/com_k2/elements/">
+                <field name="catfilter" type="radio"  class="btn-group" default="0" label="K2_CATEGORY_FILTER" description="K2 category filter">
+                    <option value="0">K2_ALL</option>
+                    <option value="1">K2_SELECT</option>
+                </field>
+                <field name="category_id" type="categoriesmultiple" default="" label="K2_SELECT_ONE_OR_MORE_CATEGORIES" description="K2_SELECT_CATEGORIES_DESC"/>
+                <field name="getChildren" type="radio"  class="btn-group" default="0" label="K2__SHOW_SUB_CATEGORIES" description="k2 fetch items from children category">
+                    <option value="1">K2_YES</option>
+					<option value="0">K2_NO</option>
+                </field>
+				</fieldset>
+			<fieldset name="EXTRA_OPTIONS_LABEL" label="EXTRA_OPTIONS_LABEL" addfieldpath="/administrator/components/com_k2/elements/">
+				<field name="extrafield_id" type="sjk2extrafield" multiple="true" size="10"
+                       label="K2_SELECT_ONE_OR_MORE_EXTRAFIELD"
+                       description="K2_SELECT_EXTRAFIELD_DESC"/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field
+					name="moduleclass_sfx"
+					type="text"
+					label="MODULECLASS_SFX_LABEL"
+					description="MODULECLASS_SFX_DESC" />
+				<field name="pretext" type="textarea" default="" label="Pre-text" description="Intro text of module" cols="36" rows="4" filter="raw" />
+				<field name="posttext" type="textarea" default="" label="Post-text" description="Footer text of module" cols="36" rows="4" filter="raw" />
+				<field name="owncache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

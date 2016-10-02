@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout type="lmr">
+
+    <groups>
+        <group class="col-md-3 col-sm-3" >left</group>
+        <group class="col-md-3 col-sm-3" >right</group>
+        <group
+               class="col-md-6 col-sm-6"
+               noright-class="col-md-9 col-sm-9"
+               noleft-class="col-md-9 col-sm-9"
+               noleftright-class="col-sm-12">main</group>
+    </groups>
+    <blocks>
+
+        <top html5tag="section" order="1" id="yt_top">
+            <positions>
+               <position class="col-md-2 col-sm-4" type="feature" overlogo="overlogo">@logo</position>
+               <position class="col-md-8 col-sm-4" type="feature">@mainmenu</position>
+                <position class="col-md-2 col-sm-4" type="modules"  style="ytmod">top-right</position>
+            </positions>
+        </top>
+
+        <slideshow html5tag="section" order="3" id="yt_slideshow">
+            <positions>
+                <position class="col-sm-12" type="modules"  style="ytmod" >slideshow</position>
+            </positions>
+        </slideshow>
+
+        <breadcrumb html5tag="section" order="4" id="yt_breadcrumb">
+            <positions>
+                <position class="col-sm-12" type="modules"  style="ytmod" >breadcrumb</position>
+            </positions>
+        </breadcrumb>
+
+        <content html5tag="section" order="5" id="content">
+            <positions>
+                <position group="left"  type="modules"  style="ytmod" >left</position>
+                <position group="main"  type="message"></position>
+                <position group="main" type="modules" style="ytmod">main-top</position>
+                <position group="main"  type="component">component</position>
+                <position group="main" type="modules" style="ytmod">main-bottom</position>
+                <position group="right" type="modules"  style="ytmod" >right</position>
+            </positions>
+        </content>
+
+        <spotlight4 html5tag="section" order="6" id="yt_spotlight4">
+            <positions>
+                <position class="col-sm-3" style="ytmod" type="modules">top1</position>
+                <position class="col-sm-3" style="ytmod" type="modules">top2</position>
+                <position class="col-sm-3" style="ytmod" type="modules">top3</position>
+                <position class="col-sm-3" style="ytmod" type="modules">top4</position>
+            </positions>
+        </spotlight4>
+
+        <spotlight1 html5tag="section" order="7" id="yt_spotlight1">
+            <positions>
+                <position class="col-sm-12" type="modules"  style="ytmod" >bottom</position>
+            </positions>
+        </spotlight1>
+
+        <spotlight2 html5tag="section" order="8" id="yt_spotlight2">
+            <positions>
+                <position class="col-sm-12" type="modules"  style="none" >socical-bottom</position>
+            </positions>
+        </spotlight2>
+
+        <spotlight3 html5tag="section" order="9" id="yt_spotlight3">
+            <positions>
+                <position class="col-md-3" type="modules"  style="ytmod" >bottom1</position>
+                <position class="col-md-6" type="modules"  style="ytmod" >bottom2</position>
+                <position class="col-md-3" type="modules"  style="ytmod" >bottom3</position>
+            </positions>
+        </spotlight3>
+
+        <footer html5tag="footer" order="10" id="yt_footer">
+            <positions>
+                <position class="col-sm-6" type="modules">footer</position>
+                <position class="col-sm-6" type="feature">@copyright</position>
+            </positions>
+        </footer>
+    </blocks>
+</layout>

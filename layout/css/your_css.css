@@ -1,0 +1,136 @@
+/*******************************************
+***          YT Framework: css          ***
+*******************************************/
+
+/* Medium devices Desktops  
+// ------------------*/
+@media (min-width: 980px) and (max-width: 1199px) {
+	
+}
+
+/* Small devices Tablets	
+// ------------------*/
+@media (min-width: 768px) and (max-width: 979px) {
+	
+}
+
+/* Extra small devices Phones
+// ------------------*/
+@media (max-width: 767px){
+	
+}
+
+#top1 #mod-finder-searchform {width: 80%; float: right;}
+
+ .span12 {
+    width: 1170px;
+  }
+  .span11 {
+    width: 1070px;
+  }
+  .span10 {
+    width: 970px;
+  }
+  .span9 {
+    width: 870px;
+  }
+  .span8 {
+    width: 770px;
+  }
+  .span7 {
+    width: 670px;
+  }
+  .span6 {
+    width: 570px;
+  }
+  .span5 {
+    width: 470px;
+  }
+  .span4 {
+    width: 370px;
+  }
+  .span3 {
+    width: 270px;
+  }
+  .span2 {
+    width: 170px;
+  }
+  .span1 {
+  width: 70px;}
+   .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  .row-fluid:before,
+  .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .row-fluid:after {
+    clear: both;
+  }
+  .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 2.564102564102564%;
+    *margin-left: 2.5109110747408616%;
+  }
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94680851063829%;
+  }
+  .row-fluid .span11 {
+    width: 91.45299145299145%;
+    *width: 91.39979996362975%;
+  }
+  .row-fluid .span10 {
+    width: 82.90598290598291%;
+    *width: 82.8527914166212%;
+  }
+  .row-fluid .span9 {
+    width: 74.35897435897436%;
+    *width: 74.30578286961266%;
+  }
+  .row-fluid .span8 {
+    width: 65.81196581196582%;
+    *width: 65.75877432260411%;
+  }
+  .row-fluid .span7 {
+    width: 57.26495726495726%;
+    *width: 57.21176577559556%;
+  }
+  .row-fluid .span6 {
+    width: 48.717948717948715%;
+    *width: 48.664757228587014%;
+  }
+  .row-fluid .span5 {
+    width: 40.17094017094017%;
+    *width: 40.11774868157847%;
+  }
+  .row-fluid .span4 {
+    width: 31.623931623931625%;
+    *width: 31.570740134569924%;
+  }
+  .row-fluid .span3 {
+    width: 23.076923076923077%;
+    *width: 23.023731587561375%;
+  }
+  .row-fluid .span2 {
+    width: 14.52991452991453%;
+    *width: 14.476723040552828%;
+  }
+  .row-fluid .span1 {
+    width: 5.982905982905983%;
+    *width: 5.929714493544281%;
+  }
+	
+	

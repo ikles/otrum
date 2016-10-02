@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("mwicons.eot");
+	src: url("mwicons.eot#iefix") format("embedded-opentype"),
+	url("mwicons.woff") format("woff"),
+	url("mwicons.ttf") format("truetype"),
+	url("mwicons.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="mwicons-"]:before, [class*=" mwicons-"]:before,
+[class^="mwicons-"]:after, [class*=" mwicons-"]:after {   
+	font-family: Flaticon;
+	font-style: normal;
+}
+.mwicons-bricks10:before {
+	content: "\e000";
+}
+.mwicons-images11:before {
+	content: "\e001";
+}
+.mwicons-refresh57:before {
+	content: "\e002";
+}
+.mwicons-three168:before {
+	content: "\e003";
+}
+.mwicons-web63:before {
+	content: "\e004";
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>Falang - K2</name>
+    <author>Stéphane Bouey</author>
+    <creationDate>February 2014</creationDate>
+    <copyright>2011-2014, Faboba</copyright>
+    <license>GNU General Public License version 2 or later http://www.gnu.org/licenses/gpl.html</license>
+    <authorEmail>stephane.bouey@faboba.com</authorEmail>
+    <authorUrl>http://www.faboba.com</authorUrl>
+    <version>3.0</version>
+    <description>PLG_SYSTEM_FALANGK2_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="falangk2">index.html</filename>
+		<filename plugin="falangk2">falangk2.php</filename>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="language/en-GB">en-GB.plg_system_falangk2.ini</language>
+		<language tag="language/en-GB">en-GB.plg_system_falangk2.sys.ini</language>
+	</languages>
+	<config>
+	</config>
+</extension>

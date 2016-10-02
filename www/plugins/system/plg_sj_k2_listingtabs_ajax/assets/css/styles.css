@@ -1,0 +1,28 @@
+.itemListView  .resplc-loadmore{
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	margin:20px auto;
+	clear:both;
+}
+
+.itemListView  .resplc-loadmore .resplc-loadmore-btn{
+	padding:8px 12px;
+	display:inline-block;
+	background-color:#3E95D7;
+	color:#FFF;
+	cursor:pointer;
+}
+
+.itemListView   .resplc-loadmore .resplc-loadmore-btn .resplc-image-loading{
+	background:url('../images/301.gif') no-repeat scroll center center transparent;
+	width:24px;
+	height:24px;
+	display:none;
+	margin-right:10px;
+	vertical-align:middle;
+}
+
+.itemListView  .resplc-loadmore .resplc-loadmore-btn:after{
+	content: attr(data-rlc_label);
+}

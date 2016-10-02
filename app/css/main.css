@@ -1,0 +1,37 @@
+.home-layout1 #yt_top .container {
+  width: 1200px !important;
+  margin: auto !important; }
+
+/*input[type=submit]*/
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .home-layout1 #yt_top .container {
+    width: 100% !important; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/ }
+
+@media only screen and (max-width: 640px) {
+  /**/ }
+
+@media only screen and (max-width: 620px) {
+  /**/ }
+
+@media only screen and (max-width: 570px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+@media only screen and (max-width: 360px) {
+  /**/ }
+
+@media only screen and (max-width: 320px) {
+  /**/ }

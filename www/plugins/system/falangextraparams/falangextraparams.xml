@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="system" method="upgrade">
+    <name>Falang - Extra Params</name>
+    <author>Stéphane Bouey</author>
+    <creationDate>February 2014</creationDate>
+    <copyright>2011-2014, Faboba</copyright>
+    <license>GNU General Public License version 2 or later http://www.gnu.org/licenses/gpl.html</license>
+    <authorEmail>stephane.bouey@faboba.com</authorEmail>
+    <authorUrl>http://www.faboba.com</authorUrl>
+    <version>1.0.5</version>
+    <description>Add extra parameters from other components to Falang translation.</description>
+	<files>
+		<filename plugin="falangextraparams">index.html</filename>
+		<filename plugin="falangextraparams">falangextraparams.php</filename>
+	</files>
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+                    <field name="hogastemplatename"
+                           type="text"
+                           default="ekho"
+                           description="Set the Hogas template name if used."
+                           label="Hogas Template name"
+                            />
+
+            </fieldset>
+        </fields>
+	</config>
+</extension>

@@ -1,0 +1,412 @@
+// Color Variables
+@import "../color/variables_color.less";
+@borderColor: #ebebeb;
+
+
+#yt_top #top1{ width: 19%;}
+
+//Layout Index1
+
+#yt_top {
+    #top1 {}
+    #top2 { float: left;}
+    &.menu-fixed {
+        #yt_logo {
+            .logo {}
+            .logo-text {
+                .site-text {}
+                .site-slogan {}
+            }
+        }
+        #yt_mainmenu {
+            #meganavigator li.level1 > .item-link {}
+            #meganavigator li.full_megachild .mega-content {}
+        }
+        #top-right {}
+    }
+}
+
+#yt_wrapper{
+    #yt_top{
+        .container{}
+    }
+}
+#yt_slideshow{
+    .container{
+        .info_services{
+            .container{}
+        }
+    }
+}
+#yt_spotlight3 {}
+#yt_spotlight5 {
+    .container{
+        #spotlight5{}
+    }
+}
+
+/******** MODULES ********/
+//Module BreadCrumb
+.wrap_breadcrumbs {
+    ul.breadcrumb { float: left; }
+}
+
+//Module Custom Slider
+.sjmainslide {
+    .yt-content-slider {
+        .owl-controls {
+            margin: 0;
+            .owl-nav {
+                .owl-prev{ right: auto;}
+            }
+        }
+    }
+}
+
+// module images categories
+#spotlight7{
+    .yt-content-slider{
+        .owl-controls{
+            .owl-nav{
+                .owl-prev{ right: auto;}
+            }
+        }
+    }
+}
+
+//Module Search
+.module.modsearch {
+    .form-inline {
+        .inputbox {float: right;}
+        .button { float: right; }
+    }
+}
+
+// module k2 listing tabs(Upcoming courses)
+.module.sjupcomingcourses{
+    .sj-listing-tabs{
+        .ltabs-wrap{
+            .ltabs-items-container{
+                .ltabs-items{
+                    .ltabs-items-inner{
+                        .owl-controls{
+                            .owl-nav{
+                                .owl-prev{
+                                    &:before{left: 10px;}
+                                }
+                                .owl-next{
+                                   &:after{ left: 0px;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Module Sj Flatmenu
+.module.mcat {
+    ul.menu {
+        li {
+            a { 
+                &:before {
+                    content: "\f060"; margin-right: 0; margin-left: 15px; float: right;
+                }
+            }
+        }
+    }
+}
+
+//Module Sj Basic News
+.module.popular_posts {
+    .sj-basic-news {
+        .bs-items .bs-item .bs-image {float: right; padding: 0 0 10px 10px;}
+    }
+}
+
+//Module Sj Mega News for K2
+.module.sj-meganew-freecourses{
+    .sj-meganew{
+        .meganew-wrap{
+            .meganew-box{
+                .meganew-box-inner{
+                    .meganew-items.theme2{
+                        .item-other{
+                            .other-link{
+                                .items-other{
+                                    .img-more{ 
+                                        img{ width: 100%;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Module Contact
+
+
+.module.contact_right {
+    .contact-ajax {
+        .ctajax-wrap {
+            .ctajax-element {
+                .el-control {
+                    &.ctajax-error, &.ctajax-ok {
+                        .ca-tooltip, .icon-ok-sign.el-ok {
+                            right: auto; left: 15px;
+                        }
+                    }
+                    #cainput_submit {float: left;}
+                    &.el-control-select {
+                        position: relative;
+                        &:after {
+                            right: auto; left: 1px;
+                        }
+                    }
+                }
+                .row {
+                    .el-control {
+                        &.ctajax-error, &.ctajax-ok {
+                            .ca-tooltip, .icon-ok-sign.el-ok { right: auto; left: 10px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Module Smart Search
+.search_top {
+    float: left;
+    &.open {
+        .btn-finder-searchform { right: auto; left: 0; }
+    }
+}
+
+//Module Login
+.sjlogin {
+    float: left;
+    .sjloginbt {padding: 5px 8px; font-size: 12px;}
+    .dropdown-menu {
+        float: left; left: 0; right: auto;
+        ul.unstyled {margin: 0; padding: 0; list-style: none;}
+    }
+}
+
+#login-form.form-vertical {
+    float: left; display: inline-block;
+    .logout-button .btn {padding: 5px 8px; font-size: 12px;}
+}
+
+//Module K2 Content
+
+//Footer
+.newsletter {
+    .acymailing_module_form {
+        .acymailing_introtext, .acymailing_form {
+            float: right;
+        }
+        .acymailing_introtext {
+            p{
+                padding-right: 20px; padding-left: 0;
+            }
+        }
+        .acymailing_form {
+            p {
+                float: right;
+                &.fieldacyemail {
+                    input.inputbox {
+                        padding-right: 15px; padding-left: 0;
+                    }
+                }
+                &.acysubbuttons {
+                }
+            }
+        }
+    }
+}
+//Custom Html
+.about_footer {
+    .list_social {
+        li {
+            float: right; margin-right: 0; margin-left: 12px;
+        }
+    }
+}
+
+//Others
+.pagination ul.pagination li a .fa.fa-angle-left.r-hiden, .pagination ul.pagination li a .fa.fa-angle-right.r-hiden {display: block; position: relative; top: 8px;}
+.pager ul.pagination li a .fa.fa-angle-left.r-hiden, .pager ul.pagination li a .fa.fa-angle-right.r-hiden {display: block;}
+.pager ul.pagination li a .fa.fa-angle-left.l-hiden, .pagination ul.pagination li a .fa.fa-angle-left.l-hiden {display: none;}
+.pagination ul.pagination li a .fa.fa-angle-right.l-hiden {display: none;}
+.pager li > a, .pager li > span {min-height: 32px;}
+
+//Joomla Content
+.blog .items-row .item .wrap-article .article-text {text-align: right;}
+
+
+//Module k2 content
+.module.sjrelateclass {
+    .k2ItemsBlock {
+        ul {
+            li{
+                .it-left{ margin: 4px 0 0 20px; float: right;}
+                .it-right{
+                    .item-fields{
+                        .fields-eventdate{
+                            padding: 0 34px 0 0;
+                            background-position: right center;
+                        }
+                        .fields-eventaddress{
+                            padding: 0 34px 0 0;
+                            background-position: right center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Module SJ k2 extra slider
+.module.sjlatestblog{
+    .sj-extra-slider{
+        .heading-title{ float: right;}
+        .owl-nav{ float: left; text-align: left;
+            .owl-prev, .owl-next{ margin-left: 0; margin-right: 6px; cursor: pointer;float: left;}
+        }
+        .extraslider-inner{
+            .owl-stage-outer{
+                .owl-item{
+                    .item{
+                        .item-wrap.style2{
+                            .item-wrap-inner{
+                                .ex-info-left{ float: right;}
+                                .ex-info-right{ padding: 18px 20px 0 0;
+                                    .item-title{ padding: 0 0 7px; }
+                                    .it-au-ct{ 
+                                        .it-au{margin: 0 0 0 20px;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//module top login
+#top2{
+    .login-form-wrapper{
+        .modal{
+            .modal-dialog{
+                .modal-content{
+                    .modal-header{
+                        .title{ text-align: right;}
+                    }
+                    #login-form{
+                        .userdata{
+                            .col-sm-12{
+                                .unstyled{ text-align: right;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Module Custom Recentpost
+.module.sj_testimonials{
+    h3.modtitle{
+        a{ float: left;}
+    }
+    ul {
+        li {
+            a{ float: right;
+                img{ margin-right: 0; margin-left: 15px;}
+            }
+        }
+    }
+}
+
+// Module custom Info Services
+.info_services{
+    .items{
+        .item{ border-left: none; border-right: 1px solid #f1f0f0;
+            &:last-child{ border-left: 1px solid #f1f0f0;}
+        }
+    }
+}
+
+// module sjextrafieldsfilter
+.sjextrafieldsfilter{ background: @background1;
+    .pre-text{ background: transparent url(../images/bg/bg-row-filter-rtl.png) no-repeat scroll center left; padding: 37px 38px 31px 23px;}
+    .sj-k2-filter{ padding: 31px 22px 31px 0;
+        .form-inline{
+            .form-group{
+                 #categories_chzn, #categories, .chzn-container{ margin-right: 0; margin-left: 7px;
+                    .chzn-single{
+                        span{ border-right: none; border-left: 1px solid #ebebeb; margin: 0 0 0 6px;}
+                        div{ left: 0; right: auto;}
+                    }
+                }
+                #searchword{ margin: 0 0 0 7px;}
+            }
+        }
+    }
+}
+
+
+// Module custom sj-learningonline
+.sj-learningonline{
+    .detail{ padding: 96px 0 0 30px;}
+    .item{
+        .items{
+            &:nth-child(1), &:nth-child(3) , &:nth-child(5) , &:nth-child(7), &:nth-child(9){ padding-right: 0; padding-left: 15px;}
+            &:nth-child(2), &:nth-child(4) , &:nth-child(6) , &:nth-child(8), &:nth-child(10){ padding-left: 0; padding-right: 15px;}
+        }
+    }
+}
+
+//Module sj_k2_categories
+.sj_k2_categories{
+    .cat-wrap.theme2{
+        .items-child{
+            .owl-stage-outer{
+                .owl-stage{
+                    .owl-item{ border-right: none; border-left: 1px solid #f1f0f0;
+                        &:first-child{border-left: none; border-right: 1px solid #f1f0f0;}
+                        .ct-item{
+                            .item-child{ 
+                                .cat-readmore{
+                                    &:before, &:after{ left: auto; right: 0;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .owl-controls{
+                .owl-nav{
+                    .owl-prev{ left: -47px;}
+                    .owl-next{ right: -47px;}
+                }
+            }
+        }
+    }
+}
+
+//Others
+.btn-hamburger{ margin: 30px -50px 0 0;}

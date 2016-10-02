@@ -1,0 +1,252 @@
+// Medium devices Desktops
+// ------------------
+@media (max-width: @screen-md-max) {
+    .home-layout2{
+            #maintop1, #maintop4{ display: none;}
+    }
+     .sj-k2-filter .chzn-container-single .chzn-single div{top: 15px;
+        b:before{display: none;}
+     }
+     .yt-portfolio .mega-hovertitle{
+        display: none;
+     }
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    #k2Container.userView .userItemList .userItemView{
+        min-height: 380px;
+        margin: 0 0 10px;
+    }
+    .home-layout2 #topsearch .search_topindex2 .dropdown-search .btn   {top: 0;}
+    //Layout-Templates
+    div.container, .home-layout1 #yt_slideshow .container .info_services .container{width: 980px;}
+    #main-top-right{float: right;}
+    //
+    #k2Container.itemListView.listing_event .itemContainer .catItemView .event-left{
+        .catItemImageBlock   {
+            margin: 0 0 20px;
+        }
+        .main-item{
+            width: 100%;
+            
+        }
+    }
+    //Layout 1
+    .home-layout1{
+        #yt_top {
+            #yt_logo { width: 20%; padding: 0 0 0 10px;}
+            #yt_mainmenu { padding: 0 0 0 20px; width: 48%;
+                #meganavigator li.level1 > .item-link { padding: 35px 15px;}
+                #meganavigator li.full_megachild .mega-content-inner {width: 1024px !important;}
+                .btn-hamburger {display: none;} 
+                .mega2 .adsmega { margin: 13px 0px -34px;}
+            }
+            #top1 .sjk2-search.sjk2-search-open, .home-layout1 #yt_top #top1 .no-js .sjk2-search{ width: 625px;}
+            #top2 {}
+        }
+        
+        .sjmainslide .yt-content-slider .owl-controls .owl-nav{
+            .owl-prev{ left: 5%;}
+            .owl-next{ right: 5%;}
+        }
+        .sj-joinpeople .join-midder{ padding: 12px 5% 0;}
+        .sjupcomingcourses .sj-listing-tabs .ltabs-wrap .ltabs-tabs-container .ltabs-tabs-wrap .ltabs-tabs .ltabs-tab{margin: 0 5px; padding: 5px 10px;}
+        .sj-learningonline .detail{
+            .detail-top{}
+            .detail-mid{ font-size: 60px;}
+            .detail-bot{ font-size: 50px;}
+        }
+        .sj-meganew .meganew-wrap .meganew-box .item-image img{max-width: inherit; width: auto;}
+        .sj-meganew .meganew-wrap .meganew-box .meganew-items.theme2 .item-other .img-more img{ max-width: inherit;}
+        .sj_k2_categories .cat-wrap.theme2 .items-child{ width: 895px;}
+        .sjextrafieldsfilter{
+            .pre-text{ width: 30%;}
+            .sj-k2-filter{ width: 70%;
+                .form-inline .form-group{
+                    #categories_chzn, #categories, .chzn-container{ width: 160px !important; }
+                    #searchword{ width: 160px !important;}
+                } 
+            }
+        }
+    }
+    //layout 2
+    .home-layout2{
+        
+        #meganavigator .button.meganavigator-close{ padding: 0 0 0 60px;}
+        .sjmainslide .yt-content-slider .owl-controls .owl-nav{
+            .owl-prev{ left: 3.1%;}
+            .owl-next{ right: 3.1%;}
+        }
+        #maintop2{ float: right;
+            .sj-maintop2{ padding: 20px 20px 0;}
+        }
+        .sjextrafieldsfilter{
+            .pre-text{}
+            .sj-k2-filter{ width: 700px;
+                .form-inline .form-group{
+                    #categories_chzn, #categories, .chzn-container{ width: 160px !important; }
+                    #searchword{ width: 160px !important;}
+                } 
+            }
+        }
+        .sjmainslide .yt-content-slider .owl-stage-outer .owl-stage .owl-item .yt-content-slide .slider-detail{top: 60%}
+        .sj-learningonline{
+            .detail{ padding: 69px 30px 0 0; width: 45%;}
+            .item{ padding: 83px 0 50px; width: 55%;}
+        }
+        .sjfeaturedcourses .sj-extra-slider .owl-nav{
+            .owl-next{ left: 64.3%;}
+            .owl-prev{ left: 33.1%;}
+        }
+    }
+
+    //k2 component
+    #k2Container{
+        &.tagView{
+            .tagItemList{
+                .col-md-6{
+                    &.tagitems{ clear: both;}
+                }
+            }
+        }
+        &.itemListView.listing_event .itemContainer .catItemView .event-left .main-item .countdown-event .countdown-section{ margin-bottom: 10px;}
+        &.item-courses .headerTop .headerTopRight .k2store{
+            .product_price{ padding-right: 5px;}
+            .k2store_add_to_cart{
+                .k2store_cart_button{ padding: 15px 10px;}
+            }
+        }
+    }
+
+    //Joomla Core
+    .blog {
+    .items-leading .item{
+    .item-image{float: none !important;margin: 0px 0px 20px 0px;display: inline-block;}
+    &.span4,
+    &.span6,
+    &.span3 {
+     .item-image{
+          .img_caption{width: auto !important;}
+     }
+    }
+    &.col-sm-6 {
+    .article-text {min-height: 205px;}
+    }
+
+    }
+    .items-row .item{
+    .item-image{float: none !important;margin: 0px 0px 20px 0px;display: inline-block;}
+    &.col-sm-3,
+    &.col-sm-4,
+    &.col-sm-6 {
+     .item-image{
+          img{max-width: 100% ; display: block ;}
+          .img_caption{width: auto !important;}
+     }
+    }
+    &.col-sm-6 {
+    .article-text {min-height: 205px;}
+    }
+    }
+
+    //Feature
+    &.blog-featured .items-row .item .item-image {}
+
+    }
+    .registration .form-horizontal .control-label{white-space: nowrap; width: 28%;}
+
+    // Article
+    .item-page {
+    .btn.btn-flat {font-size: 14px;}
+    .dt-list {width: 47%;}
+    }
+
+    //Tags Category
+    .tag-category ul.items-row .item .item-image {float: none !important;margin: 0px 0px 20px 0px;display: inline-block;}
+
+
+    //Module
+    .newsletter{
+        .acymailing_module_form{
+            .acymailing_introtext{
+                h3{font-size: 16px;}
+            }
+        }
+    }
+
+    //Search
+    #mod-finder-searchform {margin: 3px 0 0;
+    input.inputbox {width: 185px;}
+    }
+
+    //Login
+    .yt-loginform .dropdown-menu {min-width: 190px;}
+    .mod-languages {
+
+    .dropdown-menu  {min-width: 150px;
+         li a {font-size: 12px;
+              img {margin-top: 3px;}
+         }
+    }
+    }
+    .form-vertical {padding: 13px 5px;
+    .login-greeting {font-size: 12px;margin: 4px 4px 0 0;}
+    .logout-button .btn {padding: 3px 1px 3px 8px;}
+    }
+
+    //Language
+    .mod-languages ul.dropdown-menu {min-width: 150px;}
+
+    //Accordion
+    div.sj-accordion .acd-items .acd-item .acd-content-wrap .acd-content-wrap-inner .acd-content {padding: 10px;
+    .acd-description {font-size: 12px;}
+    }
+
+    //Basic News
+    div.bsn-wrap.theme3 .item {
+    .basicnews-desc {padding: 10px;font-size: 12px;}
+    .basicnews-info {padding:5px 10px 20px;}
+    }
+
+    iframe {width: 100%;}
+    
+    .sj_content_sp8 .sp8_right .wcol .col .content p {display: none;}
+    .module.sj_counterft .custom.sj_counterft ul li {padding: 20px 30px;}
+    #k2Container.itemViewOurtrainer .itemBody .itemFullText .ourtrainer-content .ot-contact .social ul li a.yt-icon {margin: 5px;}
+    .module.sj-ourclass .k2ItemsBlock .moduleItemIntrotext .moduleItemImageWrap .mask {bottom: -1px;}
+    .adsclass .content {margin: -44% 0 0;}
+    //RTL Language
+    .rtl {
+        //Layout-Templates
+        #main-top-right{float: left;}
+
+        //Layout 1
+        &.home-layout1{
+            #yt_top {
+                #yt_logo { padding: 0 10px 0 0;}
+                #yt_mainmenu { padding: 0 20px 0 0;}
+                #top2{ padding: 0 0 0 5px;}
+            }
+            .module.sj-meganew-freecourses .sj-meganew .meganew-wrap .meganew-box .meganew-box-inner .meganew-items.theme2 
+            .item-other .other-link .items-other .img-more img{ width: inherit;}
+        }
+        //layout 2
+        &.home-layout2{
+            #yt_top #top1{ width: 22%;}
+            #meganavigator .button.meganavigator-close{ padding: 0 60px 0 0;}
+            #maintop2{ float: left;}
+            .sj-learningonline{
+                .detail{ padding: 69px 0 0 30px; }
+            }
+        }
+
+        //k2 component
+        #k2Container{
+            &.item-courses .headerTop .headerTopRight .k2store{
+                .product_price{ padding-right: 0; padding-left: 5px;}
+            }
+        }
+        .blog .items-leading .item .article-aside dd .fa {margin-left: 0; margin-right: 5px;}
+        // Sj Eduonline
+    }
+}
+

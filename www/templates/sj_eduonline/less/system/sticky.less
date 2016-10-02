@@ -1,0 +1,58 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+@import "../../asset/bootstrap/less/mixins.less";
+@import "../system/variables.less";
+@import "../color/variables_color.less";
+
+
+/*  1.Select special positions
+--------------------------------------------------------- */
+//Sticky Top
+#yt_sticky_top{
+    .btn-special{bottom: -130px; //border-radius: 0 0 5px 5px;
+    }
+    .btn-special-close{bottom: auto;top: 0;}
+}
+#yt_sticky_bottom{
+    .btn-special{top: -35px;border-radius: 5px 5px 0 0 ;}
+    .btn-special-close{top: auto;bottom: 0; }
+}
+div.yt-slideBar{width:100%; height:100%; background:rgba(0,0,0,0.8);position: fixed;z-index: 920;
+    h3.modtitle{border: none; margin: 0 0 10px; padding: 0;background: transparent;}
+    .yt-notice{position:relative;z-index:8;
+        .module  {padding: 10px 0;margin: 0;color: #ccc;}
+    }
+    .btn-special-close{
+        position:absolute;right:0 ;left:auto;width:45px;line-height:130px;height: 130px;top: 0;
+        color: #fff;z-index: 25; font-size: 16px;cursor:pointer;text-align: center;
+        i{margin:0;}
+    }
+    
+}
+.sticky-top{
+    position:absolute;right:0 ;left:auto;width:45px;line-height:130px;height: 130px;top: 0;
+    color: #fff;z-index: 25; font-size: 16px;cursor:pointer;text-align: center;
+    display:block;right: 0;background: @background1;z-index: 50;
+    i{margin:0;}
+}
+
+
+//Sticky SlidPanel
+#yt_sticky_right{right:0;
+    .btn-special{right: 100%;}
+}
+#yt_sticky_left{left:0;
+    .btn-special{left: 100%;}
+}
+.yt-slidePanel{position:fixed;z-index: 250;top:230px;padding: 0;width: 280px;
+    .yt-sticky{
+        .module{width:100%;position:absolute;z-index:88;right: -100%; border: none;
+            .box-special{background: white;border: 5px solid #777;padding: 15px;}
+            .btn-special{height: 50px;width:45px;color: #fff;border-bottom: 1px solid #666;background-color:@gray;display:block;position:absolute;cursor:pointer;text-align: center;
+                span{font-size: 20px;line-height: 50px;width:24px;margin: 0 4px 0 8px;}
+                &:hover span{color:@white;text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);}
+            }
+        }
+    }
+}

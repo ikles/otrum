@@ -1,0 +1,201 @@
+// Color Variables
+@import "../color/variables_color.less";
+@borderColor: #ebebeb;
+a {
+    color: @linkColor;
+    &:hover {color: darken(@background1,15%);}
+}
+* {
+    &:hover {.transition(all 0.3s ease-in-out);}
+}
+//Layout Index2
+&.home-layout2{
+	#yt_top{ 
+	    #yt_mainmenu{ float: left; width: 35px;}
+	    #top1 { float: left; margin-left: 10px;
+	    	.social{ float: left;
+	    		.yt-socialbt{ margin-left: 15px; margin-right: 0;}
+	    	}
+	    }
+	    #topsearch{ float: left; width: 35px;}
+	    #top2 { float: left; width: 261px;
+	    	.login-form-wrapper .dropdown-toggle, .login-form-wrapper .btn-signup{ margin: 0 10px 0 0;}
+	    }
+	}
+
+	// menu
+	#meganavigator{ right: auto; left: 0; text-align: left;
+	    .button.meganavigator-close{ padding: 0 127px 0 0;}
+	    li.level1{ display: inline-block; float: none;
+	        .level2{ text-align: right;}
+	    }
+	}
+
+	//Search finder home top
+	#topsearch{
+	    .search_topindex2{
+	        .dropdown-search{ right: auto; left: 0;
+	            .button.mod-finder-close{ padding: 15px 127px 0 0 ; float: left;}
+	            #mod-finder-searchword{ border-width: 1px 1px 1px 0;}
+	            .btn{ border-width: 1px 0 1px 1px;}
+	        }
+	    }
+	}
+
+	// maintop2
+	#maintop2{
+	    .sj-maintop2{ background: transparent url(../images/bg/bg-maintop2.jpg) scroll left bottom no-repeat; padding: 15px 55px 10px 25%;
+	        h3.title-wel{
+	            &:before{ left: auto; right: 0; }
+	            &:after{ left: auto; right: 0; }
+	        }
+	        .sj-accordion{ 
+	            .yt-accordion{
+	                .yt-accordion-group{
+	                    .accordion-heading{
+	                        &:before{ left: auto; right: 0; border-color: @background1 @background1 transparent transparent;}
+	                        i{ left: auto; right: 8px;}
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+
+	// maintop3
+	#maintop3{ clear: both;
+	    .sj_k2_categories{ margin: 0;
+	        .cat-wrap.theme2{ display: block;
+	            .items-child{
+	                .ct-item{ padding: 0;
+	                    .item-child{ text-align: center; cursor: pointer;
+	                        .child-image{ padding: 72px 0 0;}
+	                        .cat-itemtitle{ font-size: 14px; color: #707070; font-weight: 700; padding: 25px 0 0; display: block;}
+	                        .toltal-count{ padding: 2px 0 0;}
+	                        &:hover{
+	                            .cat-itemtitle, .toltal-count{ color: #fff;}
+	                        }
+	                    }
+	                   
+	                }
+	            }
+	        }
+	    }
+	}
+
+	// maintop4
+
+	//module sjjoinnow
+	.sjjoinnow{
+	    .sjstep{
+	        &:before{ left: auto; right: 0;}
+	    }
+	}
+
+	//module Pop Courses
+	.sjpopularfreecourses{ 
+	    .sj-extra-slider{ 
+	        .heading-title{ 
+	            &:before{ left: auto; right: 0;}
+	            &:after{ left: auto; right: 0;}
+	        }
+	        .extraslider-inner{
+	            .owl-stage-outer{
+	                .owl-item{
+	                    .item{
+	                        .item-wrap.style2{
+	                            .item-wrap-inner{
+	                                .item-image{
+	                                    .it-date{ left: 0; right: auto;}
+	                                }
+	                                .item-info{ padding: 15px 11px 0 0; border-width: 0 2px 0 0; 
+	                                    .item-content{
+	                                        .it-au-ct{
+	                                            .it-ctname{
+	                                                &:after{ padding: 0 10px 0 6px;}
+	                                            }
+	                                        }
+	                                        .price{  font-family: @fontCustom2; font-weight: 700; float: right;
+	                                            .product_price{ font-size: 24px; color: @background1; margin: 0 0 0 5px;}
+	                                        }
+	                                        .item-readmore{ text-align: right;
+	                                            a{
+	                                                &:before{ left: auto; right: 0;}
+	                                            }
+	                                        }
+	                                    }
+	                                }
+	                            }
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+
+	//module sj filter extra fields
+	.sjextrafieldsfilter{
+	    .pre-text{ padding: 37px 15px 31px 0;}
+	    .sj-k2-filter{ padding: 31px 0 31px 15px;
+	        .form-inline{
+	            .form-group{ float: left;
+	                #categories, .input-filter{ margin: 0 0 0 10px;}
+	            }
+	        }
+	    }
+	}
+
+	//module custom learning online
+	.sj-learningonline{
+	    .detail{ padding: 99px 0 0 90px;}
+	    .item{
+	        .items-row{ 
+	            .items{ padding: 0;
+	                .detail-image{ float: right; margin: 3px 0 0 13px;}
+	                &:nth-child(1), &:nth-child(3) , &:nth-child(5) , &:nth-child(7), &:nth-child(9){ padding-right: 0; padding-left: 15px;}
+	                &:nth-child(2), &:nth-child(4) , &:nth-child(6) , &:nth-child(8), &:nth-child(10){ padding-left: 0; padding-right: 15px;}
+	            }
+	        }
+	    }
+	}
+
+	//module Featured Courses
+	.sjfeaturedcourses{
+	    .sj-extra-slider{
+	        .heading-title{
+	            &:before{ left: auto; right: 0;}
+	            &:after{ left: auto; right: 0;}
+	        }
+	        .extraslider-inner{
+	            .owl-stage-outer{
+	                .owl-item{
+	                    .item{
+	                        .item-wrap.style2{
+	                            .item-wrap-inner{
+	                                .item-info{
+	                                    .item-content{
+	                                        .it-au-ct{
+	                                            .it-ctname{
+	                                                &:after{ padding: 0 10px 0 6px;}
+	                                            }
+	                                        }
+	                                        .price{ float: right;
+	                                            .product_price{ margin: 0 0 0 5px;}
+	                                        }
+	                                        .item-readmore{ float: left;
+	                                            a{
+	                                                &:before{ left: auto; right: 0;}
+	                                            }
+	                                        }
+	                                    }
+	                                }
+	                            }
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0.0" type="plugin" group="system" method="upgrade">
+  <name>PLG_SJ_K2_FILTER</name>
+  <author>YouTech Company</author>
+  <creationDate>2016-05-04</creationDate>
+  <copyright>Copyright (C) 2016 - 2020 Open Source Matters. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>contact@ytcvn.com</authorEmail>
+  <authorUrl>http://www.smartaddons.com</authorUrl>
+  <version>3.0.0</version>
+  <description>PLG_SJ_K2_FILTER_DESC</description>
+  <files>
+    <folder>language</folder>
+    <folder>code</folder>
+    <filename plugin="plg_sj_k2_filter">plg_sj_k2_filter.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <languages folder="language/en-GB">
+    <language tag="en-GB">en-GB.plg_system_plg_sj_k2_filter.ini</language>
+    <language tag="en-GB">en-GB.plg_system_plg_sj_k2_filter.sys.ini</language>
+  </languages>
+  <config>
+  </config>
+</extension>

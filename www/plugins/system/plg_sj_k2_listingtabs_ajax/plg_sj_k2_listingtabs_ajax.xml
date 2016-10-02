@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="system" method="upgrade">
+	<name>plg_system_plg_sj_k2_listingtabs_ajax</name>
+	<author>YouTech Company</author>
+	<creationDate>October 2016</creationDate>
+	<copyright>Copyright (c) 2009-2016 YouTech Company. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>1.0.0</version>
+	<description>TPL_YTFRAMEWORK_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="plg_sj_k2_listingtabs_ajax">plg_sj_k2_listingtabs_ajax.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>assets</folder>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plg_system_plg_sj_k2_listingtabs_ajax.ini</language>
+		<language tag="en-GB">en-GB.plg_system_plg_sj_k2_listingtabs_ajax.sys.ini</language>
+	</languages>
+	<config>
+	</config>
+</extension>

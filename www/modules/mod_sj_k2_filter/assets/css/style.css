@@ -1,0 +1,46 @@
+.sj-k2-filter .input-filter{
+    margin: 5px 5px 5px 0;
+    border-radius: 0;
+    height: 25px;
+}
+.sj-k2-filter .input-cat,.sj-k2-filter .input-extrafield{
+    border-radius: 0;
+    height: 35px;
+}
+.sj-k2-filter .input-date{
+    width: 100px;
+}
+.sj-k2-filter .btn-submit{
+    border-radius: 0;
+    height: 35px;
+}
+li.sj-filter-options{
+    list-style: none;
+	border-bottom: #fff 1px sjlid;
+}
+.sj-option-container{
+	cursor: pointer;
+}
+.sj-filter-heading {
+    background: #4e9e41;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+}
+.sj-filter-heading-text {
+    float: left;
+    padding: 5px;
+    font-size: 13px;
+}
+.option-input {
+    display: inline-block;
+    margin: 3px;
+	cursor: pointer;
+}
+.sj-filter-options label {
+    font-size: 12px;
+    font-weight: normal;
+	display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,426 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+
+// --* Bonus Pages Templates *------------------
+// ---------------------------------------------
+/*  1.Page Join Now
+*   2.Page About us
+*   3.Page Services
+*   4.Page Portfolio
+*   5.Page Contact
+*   6.Page What's new
+*   7.Page Gallery
+*   8.Page Faq
+*/
+
+.fontsize_l{font-size: 18px;font-weight: 400;}
+.g-underline{font-size: 180%;font-weight: 400;}
+
+// 1.Page Join Now
+#g-joinnow{
+  ul.yt-accordion{
+    li{
+      .accordion-heading{
+        &:hover{color: @linkColor !important;}
+      }
+    }
+  }
+}
+ul.c-step{
+  list-style: none;margin: 0 auto 4em auto; counter-reset: section;display: table;position: relative;z-index: 1;padding: 0;
+  &:before{
+    content: "";width:100%;height: 10px;background: #DEDEDE;
+    position: absolute;z-index: 2;left: 0;top: 50%;margin-top: -5px;
+    .border-radius(10px); .box-shadow(1px 1px 1px rgba(0,0,0,0.1) inset);
+  }
+  li{list-style: none;margin: 0 50px;padding-top: 50px;line-height: 25px;display: inline-block;position: relative;z-index: 3;text-align: center;
+    &:before,
+    &.active:before{
+      counter-increment:section; content: counter(section);
+      width:35px;height: 35px;line-height: 35px;
+      font-size: 20px;font-weight: 800;text-align: center;display: inline-block;
+      color: #fff;
+      .border-radius(3px);.box-shadow(~"0 1px 1px 0px rgba(0, 0, 0, 0.3) inset, 0 0 0 4px #DEDEDE");#gradient .vertical( #AAC3BF ,#719088);
+    }
+    &.active:before{#gradient .vertical(lighten(@linkColor, 10%),@linkColor);}
+    &.active{
+      h3{color: @linkColor;}
+    }
+    h3{margin: 10px 0 0;font-size: 16px;}
+    span{font-size: 13px;}
+  }
+}
+
+
+.table-underline{
+  thead{border-bottom: 2px solid #404040;font-size: 14px;  #gradient .vertical(#F5F5F5,#CCCCCC);}
+  tbody{
+    tr:hover{background: #FAFFED;}
+  }
+}
+
+// 2.Page About Us
+#page-about {
+  .page-about-top{
+    position: relative; padding-bottom: 50px; margin-bottom: 40px;
+    .page-about-top-left{
+      img{width: 100%;}
+    }
+    .page-about-top-right{
+      h3.modtitle{ font-size: 28px; font-weight: bold; color: #363636;}
+      p{color: #707070;}
+    }
+    .page-about-center{
+      position: absolute; bottom: 0; right: 15px; background: #f6f4f1; width: 56%;
+      font-size: 18px; font-weight: bold; color: #363636; padding: 40px 20px 45px 65px;
+      p{
+        position: relative;
+        &:before{
+          content: '\f10d'; display: block; position: absolute; font-size: 24px; left: -40px; top: -20px; font-family: FontAwesome;
+        }
+        &:after{
+          content: '\f10e'; display: block; position: absolute; font-size: 24px; right: 10px; bottom: -35px; font-family: FontAwesome;
+        }
+      }
+    }
+  }
+  .page-about-bot{
+    .page-about-bot-left{
+      padding: 50px 0 0 100px;
+      h3.modtitle{ font-size: 28px; font-weight: bold; color: #363636;}
+      p{color: #707070;}
+    }
+    .page-about-bot-right{
+      img{width: 100%;}
+      .about-bot-rightl{
+        width: 48%; margin-right: 4%; float: left;
+      }
+      .about-bot-rightr{
+        width: 48%; float: left;
+      }
+    }
+  }
+}
+
+// 3.Page Services
+#g-pageservices{
+  .features {
+    .fa{
+      background: #777;height: 75px;width:75px;text-align: center;line-height: 67px;border: 3px solid #eee;
+      .border-radius(10px);
+    }
+  }
+  .yt-icon{float: left;}
+  .col-sm-4{margin: 1em 0;}
+  .our {h3 {margin-top: 1em;}}
+
+  article{
+    h3{font-weight: normal;}
+    a.detail{
+      &:after{content: "\f105";font-family: FontAwesome;display: inline-block;color: #fff;background: @linkColor;margin: -3px 3px 0;height:14px; width:14px;line-height: 14px; font-size: 12px; text-align: center;.border-radius(14px);}
+      &:hover{
+        &:after{color: #fff;}
+      }
+
+    }
+  }
+  h2{font-size: 180%;margin-bottom: 1em;}
+  h3 {
+    &.accordion-heading.active {color: @linkColor;}
+  }
+  hr{height: 5px;background: #eee;border-top-color: #ddd;margin: 3em 0;}
+  .testimonial-avatar{
+    [class^="icon-"], [class*=" icon-"]{border: none;}
+  }
+}
+
+// 4.Page Portfolio
+#g-pagecolumn{
+ hr{height: 5px;background: #eee;border-top-color: #ddd;margin: 4em 0;float: left;width: 100%;}
+}
+
+.page-portfolio{
+  .filter_padder{
+    margin: 0 0 45px 0;
+  }
+  .filter_wrapper{
+    border: none;
+    .filter{border: 2px #ebebeb solid; margin-right: 5px; font-weight: bold; color: #898989;}
+    .filter:hover, .filter.selected{
+      background: @background1; color: #fff; border: 2px @linkColor solid;
+    }
+  }
+  .mega-hover{
+    opacity: 1;
+      .mega-hovertitle{
+        width: auto;
+        top: 50%;
+        left: 50%;
+        bottom: auto;
+        min-width: 100%;
+        padding: 0 20px;
+        .lib-tranlate-xy();
+      }
+      .mega-hoverlink, .mega-hoverview{
+        top: auto;
+        bottom: 0;
+      }
+  }
+
+}
+// 5.Page Contact
+
+.contact-page {
+  .el-control-date{
+      #cainput_date{
+        background: #252525 none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 0;
+        height: 45px;
+        line-height: 45px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        text-transform: uppercase;
+        transition: none 0s ease 0s ;
+        width: 120px;
+        color: #fff;
+      }
+  }
+  .ctajax-element{
+    width: 100% !important;
+    h3.modtitle{font-size: 21px; color: #363636; margin-bottom: 25px;}
+  }
+  .yt-top-map{
+    margin-bottom: 38px !important;
+  }
+  .yt-el-top{
+    .el-control{
+      margin-top: 0;
+      input{width: 100%; background: #f6f4f1; border: none; margin-bottom: 0;}
+    }
+  }
+  .yt-el-bot{
+    margin: 0;
+    textarea{width: 100% !important; background: #f6f4f1; border-style: none !important; min-height: 239px !important; margin-bottom: 5px !important;}
+  }
+  .el-control-date{
+    display: inline-block;
+    margin: 0;
+  }
+  .el-control-send{
+    text-align: right; margin: 0;
+    float: right;
+    #cainput_submit{
+      background: #252525; padding: 0; text-align: center; width: 120px; height: 45px; line-height: 45px;
+      text-transform: uppercase; border: none; border-radius: 0; margin: 0; transition:none;
+      &:hover{background: @background1;}
+    }
+  }
+  .el-inner-right{
+    .el-desc{
+      border-bottom: 1px #ebebeb solid; padding-bottom: 10px;
+      h3.modtitle{font-size: 21px; color: #363636; margin-bottom: 20px;}
+      p{color: #707070;
+        a{color: #707070;
+          &:hover{color: @linkColor;}
+        }
+      }
+    }
+    .el-info-contact{
+      .info-label{
+        color: #707070;
+        &:before{color: #363636; font-size: 14px; display: block;}
+      }
+    }
+  }
+}
+
+// contact ajax
+div.contact-ajax .ctajax-wrap {
+  .ctajax-element {
+    &.block-map{
+      margin: 0 0 40px;
+    }
+    .el-inner {
+      padding: 0;
+      .el-heading { font-size: 20px;color: #444; }
+      input[type="submit"] {
+        padding: 10px 25px 10px 40px;
+        border-radius: 3px;
+        background: #676767 url(../images/icon/icon-mail.png) no-repeat 10px center;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        &:hover { background: @background1 url(../images/icon/icon-mail-over.png) no-repeat 10px center; }
+      }
+    }
+  }
+}
+
+// 6.Page What's new 
+#g-pagewhatnew{
+ .yt-lightbox.image-none{padding: 3px;background: #fff;.box-shadow(0 0 5px rgba(0, 0, 0, 0.1));display: table;margin: 0 auto 10px;}
+ h3.title{margin-bottom: 1em;border-bottom: 1px solid #eee;padding-bottom: 5px;font-size: 180%;}
+ .yt-lightbox a  img{width: auto;}
+
+}
+.categories-list .collapse.in {width: 100%;}
+
+// 7.Page Gallery 
+.item-page {
+  .yt-gallery {
+    position: relative; z-index: 0;
+    .yt-gallery-tabbed {
+      margin-bottom: 54px !important;
+      .tabnav {
+        li {
+          padding: 0; margin: 0;
+          span {
+            margin: 0; padding: 0 20px; border: #ebebeb 1px solid;
+            font-size: 14px; font-weight: 400; text-transform: uppercase;
+            border-radius: 5px; height: 42px; line-height: 42px; background: none;
+            color: #898989; margin-right: 10px;
+          }
+          &.active {
+            span {background: @background1; color: #fff; border-color: @linkColor;}
+          }
+        }
+      }
+    }
+    .gallery-list {
+      margin: 0 -15px; width: auto;
+      li {
+        padding: 0 15px 30px 15px;
+      }
+    }
+  }
+}
+// 8.Page Faq
+
+#faq-page .faq-content{
+  .accordion-heading.active, .accordion-heading:hover {
+    color: @linkColor !important;
+    .icon_accordion { color: @linkColor !important; }
+  }
+}
+// Support RTL Languages
+// --------------------------------------------------
+.rtl{
+  #g-pageportfolio [class*="span"] .port-item-content a.detail:after,
+  #g-pageservices article a.detail:after{content: "\f104";}
+
+  //Join Now
+  ul.yt-accordion li.accordion-group h3.accordion-heading .fa-plus-circle {margin-right: 0px;margin-left: 5px;}
+  #g-pageservices .yt-icon {float: right; margin: 0px 0px 1em 1em;}
+  div.yt-tabs ul.nav-tabs li {margin-right: 0; margin-left: 5px;}
+  //Page About us
+  #page-about {
+    .page-about-top{
+      .page-about-center{
+        right: auto; left: 15px; padding: 40px 65px 45px 20px;
+        p{
+          &:before{
+            left: auto; right: -30px;
+          }
+          &:after{
+            right: auto; left: 15px;
+          }
+        }
+      }
+    }
+    .page-about-bot{
+      .page-about-bot-left{
+        padding: 50px 100px 0 0;
+      }
+      .page-about-bot-right{
+        .about-bot-rightl{
+          margin-right: 0; margin-left: 4%; float: right;
+        }
+        .about-bot-rightr{
+          float: right;
+        }
+      }
+    }
+  }
+  //Page Contact
+  .contact-page {
+    .el-control-send{
+      text-align: left; 
+    }
+  }
+  //Gallery
+  .item-page {
+    .yt-gallery {
+      .yt-gallery-tabbed {
+        .tabnav {
+          li {
+            span {
+              margin-right: 0; margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.contact-ajax .ctajax-wrap.style1 .ctajax-element .el-info-contact .cf i, div.contact-ajax .ctajax-wrap.style3 .el-info-contact .cf i {float: right; margin-right: 0; margin-left: 10px;}
+  div.contact-ajax .ctajax-wrap.style3 .el-info-contact .cf {line-height: 40px;}
+  .item-page .pager ul.pagination li {float: right;}
+
+}
+
+// Support Responsive
+// --------------------------------------------------
+
+//Tablet portrait (768x1024) && Small tablet landscape (800x600)
+@media (min-width: 768px) and (max-width: 979px) {
+     // Page Join Now
+     ul.c-step{
+      li{margin: 0 10px;}
+    }
+    #g-pagewhatnew .yt-lightbox.image-none{display: block;}
+  }
+
+// Small tablet portrait (600x800) & Mobile landscape (480x320)
+@media (max-width: 767px){
+
+ #g-pageservices .span4{margin-bottom: 2em !important;}
+ #g-pageportfolio [class*="span"]{margin-bottom: 1em !important;
+  .port-item-img{display: inline-block;}
+}
+#g-pagewhatnew .yt-lightbox.image-none{display: block;}
+
+.yt-gallery ul li{width:auto !important;}
+ul.c-step{
+  &:before{display: none;}
+  li{ display: table-cell;}
+}
+
+div.g-pageteam div.b-ourteam [class*="span"]{margin-bottom: 30px !important;}
+
+}
+
+@media (max-width:360px) {
+
+  #g-pageservices {
+    .yt-tabs {
+      float: none !important;
+      .nav-tabs {
+        li {
+          float: none;
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+    .tab-content {
+      .yt-lightbox {
+        margin: 0 0 20px;
+        float: none;
+        a {display: inline-block;}
+      }
+    }
+  }
+}
