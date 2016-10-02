@@ -1,4 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
+@font-face {
+  font-family: samsungIcon;
+  src: url(../fonts/samsungIcon.ttf); }
+
 .home-layout1 #yt_top .container {
   width: 1200px !important;
   margin: auto !important;
@@ -162,13 +166,18 @@
 
 .component.solutions .span3 {
   position: relative;
-  width: 286px; }
+  width: 286px;
+  cursor: pointer; }
+  .component.solutions .span3:hover span {
+    background-color: #292929; }
+    .component.solutions .span3:hover span:after {
+      color: #ccc; }
   .component.solutions .span3 span {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 40px;
+    height: 45px;
     background-color: rgba(75, 56, 88, 0.85);
     display: block;
     color: #FFF;
@@ -177,7 +186,15 @@
     font-family: Roboto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 10px; }
+    padding: 12.5px;
+    text-transform: uppercase; }
+    .component.solutions .span3 span:after {
+      content: "4";
+      font-family: "samsungIcon";
+      height: 24px;
+      float: right;
+      font-size: 20px;
+      color: #FFF; }
 
 .row-fluid [class*="span"] {
   margin-left: 10px; }
@@ -189,6 +206,60 @@
     padding-top: 135px; }
   .row-fluid.sj-joinpeople:nth-child(2) {
     padding-bottom: 70px; }
+
+#yt_spotlight1 {
+  background-color: #F6F6F6; }
+
+#spotlight1 .module {
+  padding-top: 70px !important; }
+  #spotlight1 .module .modcontent {
+    color: #292929;
+    font-size: 15px;
+    font-family: Roboto; }
+  #spotlight1 .module h3 {
+    font-family: Roboto;
+    font-size: 21px;
+    text-transform: none; }
+
+.mnwall-item-inner {
+  background-color: rgba(41, 41, 41, 0.85) !important; }
+
+.mnwall-big .mnwall-item-inner h3.mnwall-title a, .mnwall-big .mnwall-item-inner h3.mnwall-title span {
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: bold;
+  text-transform: none;
+  line-height: 1.2; }
+
+.mnwall-masonry .mnwall-item-outer-cont.content-bottom .mnwall-item-inner {
+  min-height: 50%;
+  height: auto; }
+
+.light-text h3.mnwall-title a, .light-text h3.mnwall-title span {
+  text-transform: none; }
+
+.mnwall-desc {
+  font-size: 15px !important;
+  font-family: Roboto  !important;
+  padding-bottom: 5px; }
+
+.mnwall-title {
+  padding-top: 0  !important; }
+
+.mnwall-readmore a {
+  padding-top: 4px;
+  padding-bottom: 0;
+  height: 35px;
+  border: 0.25px solid white;
+  font-size: 13px;
+  font-family: Roboto;
+  opacity: 1  !important; }
+
+.mnwall-date {
+  padding-top: 0  !important;
+  font-size: 13px  !important;
+  font-family: Roboto   !important;
+  text-transform: none  !important; }
 
 /*input[type=submit]*/
 /*==========  Desktop First Method  ==========*/
