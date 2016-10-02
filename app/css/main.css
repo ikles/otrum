@@ -267,6 +267,100 @@
 #yt_spotlight3 .container {
   padding-top: 70px; }
 
+#spotlight6left .module {
+  color: #292929;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300; }
+  #spotlight6left .module h3.modtitle {
+    color: #292929;
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: none; }
+
+#spotlight6right {
+  width: 50%; }
+  #spotlight6right .module {
+    color: #292929;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300; }
+    #spotlight6right .module h3.modtitle {
+      color: #292929;
+      font-family: Roboto;
+      font-size: 21px;
+      font-weight: 700;
+      text-transform: none; }
+  #spotlight6right .acymailing_module div.acymailing_introtext {
+    margin-bottom: 30px !important; }
+
+#spotlight6left {
+  width: 50%; }
+  #spotlight6left .span6 {
+    float: left;
+    margin: 0;
+    padding-left: 10px;
+    line-height: 1.1;
+    font-family: Roboto;
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 25px; }
+  #spotlight6left .span6.contact_button {
+    margin-left: 0;
+    display: block;
+    height: 35px;
+    background-color: #75528b;
+    text-align: center;
+    color: #FFF;
+    padding-top: 8px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 0;
+    float: left;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer; }
+  #spotlight6left .phone_bottom {
+    float: left;
+    margin-right: 10px; }
+  #spotlight6left .row-fluid {
+    margin-top: 30px; }
+
+.acymailing_form input[type=text] {
+  width: 424px !important;
+  height: 40px !important;
+  opacity: 0.4 !important;
+  background-color: white !important;
+  border: 0.25px solid #6e6e6e !important; }
+
+.acymailing_form input[type=submit] {
+  width: 151px;
+  height: 40px;
+  background-color: #75528b;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 15px;
+  margin-left: 10px; }
+
+#yt_spotlight12 {
+  background-color: #292929; }
+  #yt_spotlight12 .row {
+    padding: 0 190px 0 162px; }
+    #yt_spotlight12 .row > div {
+      width: 25%; }
+
+#yt_footer {
+  display: none; }
+
 /*input[type=submit]*/
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
