@@ -351,6 +351,52 @@
   font-size: 15px;
   margin-left: 10px; }
 
+#yt_spotlight12 h3.modtitle {
+  font-size: 15px;
+  font-family: Roboto;
+  text-transform: none;
+  font-weight: normal;
+  margin-bottom: 5px; }
+
+.about_footer_info {
+  font-size: 15px; }
+
+#yt_spotlight12 {
+  color: #ededee;
+  font-family: Roboto;
+  background-color: #292929;
+  padding: 30px 0; }
+  #yt_spotlight12 .row {
+    padding: 0 190px 0 162px; }
+    #yt_spotlight12 .row > div {
+      color: #ededee;
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 13px; }
+      #yt_spotlight12 .row > div .menu li {
+        padding-bottom: 0; }
+  #yt_spotlight12 #bottom1 {
+    width: 250px;
+    padding: 0;
+    margin-right: 92px; }
+  #yt_spotlight12 #bottom2 {
+    width: 120px;
+    margin-right: 100px;
+    padding: 0; }
+  #yt_spotlight12 #bottom3 {
+    width: 120px;
+    padding: 0; }
+  #yt_spotlight12 #bottom4 {
+    float: right;
+    padding: 0;
+    width: 93px; }
+
+#yt_footer {
+  display: none; }
+
+.home-layout1 #yt_spotlight3::before {
+  background-color: rgba(246, 246, 246, 0.8); }
+
 /*input[type=submit]*/
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
