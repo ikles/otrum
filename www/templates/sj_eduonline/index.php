@@ -58,7 +58,7 @@ if($yt->getParam('comingsoon_mode')) header("Location: ".$this->baseUrl."?tmpl=c
     // Include css, js
     include_once (J_TEMPLATEDIR.J_SEPARATOR.'includes'.J_SEPARATOR.'head.php');
     ?>
-
+    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/main.css">
 </head>
 
 
@@ -215,6 +215,6 @@ if($yt->getParam('comingsoon_mode')) header("Location: ".$this->baseUrl."?tmpl=c
         include_once (J_TEMPLATEDIR.J_SEPARATOR.'includes'.J_SEPARATOR.'bottom.php');
     ?>
 
-
+<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/common.js"></script>
 </body>
 </html>
