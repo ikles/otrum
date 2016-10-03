@@ -489,15 +489,67 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  #spotlight6left .span6 {
+    width: 100% !important;
+    text-align: center !important; }
+  .home-layout1 #yt_top #yt_mainmenu {
+    position: absolute;
+    right: 0;
+    top: 0; }
   .slider-detail {
     display: none; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/ }
+  #yt_spotlight12 .row > div {
+    width: 100% !important;
+    text-align: center;
+    display: block !important;
+    margin-bottom: 30px !important; }
+  #top1 .module {
+    width: 100% !important; }
+  .btn-hamburger {
+    float: right;
+    margin-right: 15px !important; }
+  #yt_top .container {
+    padding-top: 0 !important; }
+  .home-layout1 #yt_top #top1 {
+    margin-bottom: 20px;
+    width: 100% !important;
+    padding: 0 10px;
+    float: left; }
+    .home-layout1 #yt_top #top1 input {
+      width: 100% !important; }
+  #yt_logo {
+    float: left !important;
+    width: 50% !important; }
+  #yt_mainmenu {
+    float: left !important;
+    width: 50% !important; } }
 
 @media only screen and (max-width: 640px) {
-  /**/ }
+  .home-layout1 #yt_top1 {
+    height: auto;
+    padding-bottom: 5px;
+    padding-right: 15px; }
+  .module.lang {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px; }
+    .module.lang ul {
+      display: block;
+      text-align: center; }
+      .module.lang ul li {
+        float: none;
+        display: inline-block; }
+  .module.top-contacts {
+    float: none;
+    width: 100%;
+    text-align: center; }
+  .top-contacts .callback {
+    float: none;
+    margin: 20px auto; } }
 
 @media only screen and (max-width: 620px) {
   /**/ }
@@ -507,7 +559,12 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .component.solutions aside {
+    padding: 20px; }
+  .component.solutions .span3 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px; } }
 
 @media only screen and (max-width: 360px) {
   /**/ }
