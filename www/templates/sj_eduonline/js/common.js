@@ -7,30 +7,34 @@ jQuery(document).ready(function($){
 
 	$('.mnwall-readmore a').text('Подробнее');
 
-
-	var he = $('body').outerHeight(true);
+	
+		var he = $('body').outerHeight(true);
 	
 
 
 	$('.uk-overlay.uk-overlay-hover .uk-position-cover').click(function (eventObject) {
 		eventObject.preventDefault();
 		var hrefka = $(this).attr('href');
-		$('#yt_wrapper').after('<div class="zoom"><img src="'+hrefka+'"></div>');
-		$('.overka').css({'display':'block','height':he});
+		/*$('#yt_wrapper').after('<div class="zoom"><a href="#" class="closer"></a><img src="'+hrefka+'"></div>');*/
+		$('.zoom a').after('<img src="'+hrefka+'">');
+		$('.zoom').addClass('dblock');
+		$('.overka').addClass('dblock');
+		$('.closer').addClass('dblock');
 	});
 
 
 	$('.overka').click(function () {
-		$('.overka').fadeOut();
-		$('.zoom').fadeOut();
+		$('.overka').removeClass('dblock');
+		$('.zoom').removeClass('dblock');
+		$('.zoom img').remove();
 	});
 
-	$('.zoom').click(function () {
-		$('.overka').fadeOut();
-		$('.zoom').fadeOut();
+	$('.closer').click(function (eventObject) {
+		eventObject.preventDefault();
+		$('.overka').removeClass('dblock');
+		$('.zoom').removeClass('dblock');
+		$('.zoom img').remove();
 	});
-
-	
 
 	
 

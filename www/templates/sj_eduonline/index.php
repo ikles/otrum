@@ -214,7 +214,8 @@ if($yt->getParam('comingsoon_mode')) header("Location: ".$this->baseUrl."?tmpl=c
         include_once (J_TEMPLATEDIR.J_SEPARATOR.'includes'.J_SEPARATOR.'bottom.php');
     ?>
 
-<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/common.js"></script>
+<div class="zoom"><a href="#" class="closer"></a></div>
 <div class="overka"></div>
+<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/common.js"></script>
 </body>
 </html>
