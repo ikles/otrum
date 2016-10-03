@@ -15,8 +15,8 @@ jQuery(document).ready(function($){
 	$('.uk-overlay.uk-overlay-hover .uk-position-cover').click(function (eventObject) {
 		eventObject.preventDefault();
 		var hrefka = $(this).attr('href');
-		$('#yt_wrapper').after('<div class="zoom"><img src="'+hrefka+'"></div>');
-		$('.overka').css({'display':'block','height':he});
+		$('#yt_wrapper').after('<div class="zoom"><span class="closer"></span><img src="'+hrefka+'"></div>');
+		$('.overka').css({'height':he}).fadeIn();
 	});
 
 
@@ -30,7 +30,10 @@ jQuery(document).ready(function($){
 		$('.zoom').fadeOut();
 	});
 
-	
+	$('.closer').click(function () {
+		$('.overka').fadeOut();
+		$('.zoom').fadeOut();
+	});
 
 	
 
